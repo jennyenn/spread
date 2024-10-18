@@ -2,3 +2,7 @@
 	--root-size:1.2rem;
 	--fg-color: #0000;
 }
+
+body{
+	font-size: var(18px)
+}
