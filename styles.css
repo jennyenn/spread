@@ -5,3 +5,6 @@
 	--fg-color: #ff000000;
 }
 
+body{
+	font-size: var(18px)
+}
