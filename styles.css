@@ -8,3 +8,12 @@
 body{
 	font-size: var(18px)
 }
+
+ol{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+ol ol {
+	flex-direction: column;
+}
