@@ -92,7 +92,8 @@ h2 {
 	margin: 0px 0px;
 	padding: var(--spacing-2) var(--spacing-2);
 	background-color: white;
-	border: var(--h2-border);
+	border-top: var(--h2-border);
+	border-bottom: var(--h2-border);
 	width:100%;
 }
 
@@ -113,13 +114,13 @@ h3 {
 
 body{
 	font-family: var(--paragraph-family);
-	max-width: 80ch;
 	color: #02010F;
 }
 	
 
 section {
 	margin-bottom: var(--spacing-6);
+	max-width: 80ch;
 }
 
 li {
@@ -160,7 +161,7 @@ p {
 	line-height: var(--paragraph-spacing);
 	margin-bottom: var(--spacing-1);
 	margin: var(--spacing-2);
-	line-height: var(--para);
+	line-height: var(--paragraph-line-height);
 }
 
 time{
@@ -229,7 +230,7 @@ nav strong{
 
 .sticky-2{
 	position: sticky;
-	top: 176px;
+	top: 200px;
 }
 
 	/* chapter */
@@ -274,7 +275,7 @@ nav strong{
 	align-items: flex-sart;
 	justify-content: space-between;
 	width:100%;
-	margin: var(--spacing-3) var(--spacing-2);
+	margin: var(--spacing-3) 0px;
 }
 
 .left-sction{
