@@ -15,6 +15,7 @@
 	--h2-family: "Instrument Sans", sans-serif;
 	--h2-size: 40px; 
 	--h2-style: medium;
+	--h2-border:1px solid #DA3946;
 
 	/* h3 */
 	--h3-family: "Instrument Sans", sans-serif;
@@ -58,48 +59,55 @@
 	--spacing-6: 96px;
 	--spacing-7: 112px;
 	--spacing-8: 128px;
+	--spacing-9: 144px;
 
 }
 
 	/* heading styles */
 
+header{
+	position: fixed;
+	top: 0;
+	width: 100%; 
+	z-index: 1000; 
+}
+
 h1 {
 	font-family: var(--h1-family);
 	font-size: var(--h1-size);
 	font-style: var(--h1-style);
-	margin-bottom: var(--h1-spacing);
 	text-transform: var(--h1-text-transform);
 	color: var(--h1-color);
+	margin-top: var(--spacing-7);
 	margin-bottom: var(--spacing-3);
 	flex-direction: row;
 	
 }
 
 h2 {
+	box-sizing: border-box;
 	font-family: var(--h2-family);
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
-	margin: 0px var(--spacing-2);
+	margin: 0px 0px;
+	padding: var(--spacing-2) var(--spacing-2);
 	background-color: white;
-	padding-top: var(--spacing-4);
+	border: var(--h2-border);
+	width:100%;
 }
 
 h3 {
 	font-family: var(--h3-family);
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
-	margin-bottom: var(--spacing-2);
-	margin: 0px var(--spacing-2);
-	background-color: white;
-	padding-top: var(--spacing-5);
+	margin: var(--spacing-4) var(--spacing-2) 0px 0px;
+	background-color: #DA3946;
+	width: 100%;
+	color: white;
+	padding: 0px var(--spacing-2);
 }
 
-header{
-	position: fixed;
-    top: 0;
-    width: 100%; 
-    z-index: 1000; 
-}
+
 
 	/* body styles */
 
@@ -110,9 +118,9 @@ body{
 }
 	
 
-/* section {
+section {
 	margin-bottom: var(--spacing-6);
-} */
+}
 
 li {
 	font-family: var(--list-family);
@@ -166,9 +174,10 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	padding: var(--spacing-3) var(--spacing-2);
+	padding: var(--spacing-3) var(--spacing-2) var(--spacing-1)  var(--spacing-2);
 	color: black;
 	width: 100%;
+	z-index: 1000;
 }
 
 .nav-left {
@@ -215,8 +224,12 @@ nav strong{
 
 .sticky{
 	position: sticky;
-	top: 0px;
-	z-index:1000;
+	top: var(--spacing-6);
+}
+
+.sticky-2{
+	position: sticky;
+	top: 176px;
 }
 
 	/* chapter */
