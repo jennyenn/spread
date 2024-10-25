@@ -99,6 +99,7 @@ body{
 	font-family: var(--paragraph-family);
 	max-width: 80ch;
 	color: #02010F;
+	justify-content: center;
 }
 	
 
@@ -277,7 +278,6 @@ nav strong{
 	background-color: white;
 	color: #DA3946;
 	font-size: var(--paragraph-size);
-	border-radius: 5px;
 	cursor:pointer;
 }
 
@@ -292,14 +292,14 @@ nav strong{
 }
 
 	/* flexblox(should be added into class later) */
-ol {
+/* ol {
 	display: flex;
 	flex-wrap: nowrap;
 }
 
 ol ol {
 	flex-direction: column;
-}
+} */
 
 
 	/* title */
