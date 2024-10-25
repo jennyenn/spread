@@ -150,9 +150,11 @@ ol ol {
 	/* title */
 
 .square-container {
-    display: flex; 
+	display: flex; 
 	background-color: white;
 	overflow: hidden;
+	position: relative;
+	width: 100%; 
 }
 
 .square {
@@ -184,6 +186,8 @@ ol ol {
 	border-top: 0px;
 }
 
+/* need to figure out how to remove line on the top of the "l" in "material""*/
+
 #s-square{ 
 	border-top: 0px solid #DA3946;
 	border-bottom: 0px solid #DA3946;
@@ -198,12 +202,12 @@ ol ol {
 }
 
 #a2 {
-	transform: translateY(-30%) translateX(-40%);
-	clip-path: inset(0); 
+	transform: translateY(0%) translateX(-60%);
+	clip-path: inset(top right bottom left);
 }
 
 #t {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(0%) translateX(-60%);
 	clip-path: inset(0); 
 }
 
