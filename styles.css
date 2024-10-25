@@ -13,7 +13,7 @@
 
 	/* h2 */
 	--h2-family: "Instrument Sans", sans-serif;
-	--h2-size: 40px; 
+	--h2-size: calc(var(--h1-size) / 2); 
 	--h2-style: medium;
 	--h2-border:1px solid #DA3946;
 
@@ -82,6 +82,10 @@ h1 {
 	margin-bottom: var(--spacing-3);
 	flex-direction: row;
 	
+}
+
+h1, h2, h4 {
+	flex-direction: row;
 }
 
 h2 {
@@ -389,17 +393,19 @@ ol ol {
 
 /* Defining the animation for "W"*/
 
-@keyframes w-moves {
+@keyframes three-step-move {
 	0% {
-	transform: translateY(0%) translateX(-40%); /* Starting point */
+	transform: translateY(var(--y--0)) translateX(var(--x--0)); /* Starting point */
 	}
 	50% {
-	transform: translateY(24px) translateX(2px); /* Moving to this location */
+		transform: translateY(var(--y--50)) translateX(var(--x--50)); /* Starting point */
 	}
 	100% {
-	transform: translateY(0%) translateX(-40%); /* Ending point */
+		transform: translateY(var(--y--100)) translateX(var(--x--100)); /* Starting point */
 	}
 }
+
+.three
 
 #w {
 	transform: translateY(0%) translateX(-40%);
@@ -421,10 +427,20 @@ ol ol {
 	}
 }
 
+.animated-square {
+	animation: three-move 5s ease-in-out infinite;
+}
+
 #o {
 	transform: translateY(-60%) translateX(-10%);
 	clip-path: inset(0); 
-	animation: o-moves 5s ease-in-out infinite;
+
+
+	--y--0: 50%;
+	--x--0: 2312%;
+	--x--50: 50%;
+
+	animation-delay: 1s;
 }
 
 /* Defining the animation for "R"*/
@@ -633,7 +649,7 @@ ol ol {
 
 /* Defining the animation for "I"*/
 
-@keyframes i-moves {
+@keyframes mmoves {
 	0% {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
@@ -689,6 +705,9 @@ ol ol {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
 	animation: l-moves 5s ease-in-out infinite;
+
+	--xoff: 50%;
+	--y-offfset: 32%;
 }
 
 footer{
