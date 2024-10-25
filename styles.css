@@ -164,6 +164,7 @@ nav {
 	background-color: white;
 	padding: var(--spacing-3) var(--spacing-2);
 	color: black;
+	width: 100%;
 }
 
 .nav-left {
