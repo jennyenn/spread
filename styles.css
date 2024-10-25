@@ -60,11 +60,10 @@
 
 body{
 	font-family: var(--paragraph-family);
-	margin: var(--spacing-2);
 	max-width: 80ch;
 	color: #02010F;
-
 }
+
 h1 {
 	font-family: var(--h1-family);
 	font-size: var(--h1-size);
@@ -80,8 +79,7 @@ h2 {
 	font-family: var(--h2-family);
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
-	margin-bottom: var(--spacing-2);
-
+	margin: 0px var(--spacing-2);
 }
 
 h3 {
@@ -89,7 +87,7 @@ h3 {
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
 	margin-bottom: var(--spacing-2);
-
+	margin: 0px var(--spacing-2);
 }
 
 	/* body styles */
@@ -105,6 +103,7 @@ blockquote {
 	line-height: var(--blockquote-spacing);
 	color: var(--blockquote-color);
 	margin-bottom: var(--spacing-2);
+	margin: 0px var(--spacing-2);
 }
 
 li {
@@ -113,6 +112,7 @@ li {
 	font-style: var(--list-style);
 	line-height: var(--list-spacing);
 	text-decoration: var(--list-text-decoration);
+	margin: 0px var(--spacing-2);
 }
 
 a {
@@ -129,6 +129,11 @@ p {
 	font-style: var(--paragraph-style);
 	line-height: var(--paragraph-spacing);
 	margin-bottom: var(--spacing-1);
+	margin: var(--spacing-2);
+}
+
+time{
+	margin: var(--spacing-2);
 }
 
 ol {
@@ -142,14 +147,30 @@ ol ol {
 
 .square-container {
     display: flex; 
-    gap: 10px; 
 }
 
 .square {
-	width: 150px;
-    height: 150px;
-    border: 2px solid #DA3946;
+	width: var(--spacing-5);
+    height: var(--spacing-5);
+    border-left: 1px solid #DA3946;
+	border-top: 1px solid #DA3946;
+	border-bottom: 1px solid #DA3946;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#lastsquare {
+	border-right: 1px solid #DA3946;
+}
+
+#middlesquare {
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+#s{
+	border-top: 0px solid #DA3946;
+	border-bottom: 0px solid #DA3946;
+	border-right: 1px solid #DA3946;
 }
