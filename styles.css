@@ -94,13 +94,19 @@ h3 {
 	padding-top: var(--spacing-5);
 }
 
+header{
+	position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
 	/* body styles */
 
 body{
 	font-family: var(--paragraph-family);
 	max-width: 80ch;
 	color: #02010F;
-	justify-content: center;
 }
 	
 
@@ -146,15 +152,11 @@ p {
 	line-height: var(--paragraph-spacing);
 	margin-bottom: var(--spacing-1);
 	margin: var(--spacing-2);
-	line-height: var(--paragraph-line-height);
+	line-height: var(--para);
 }
 
 time{
 	margin: var(--spacing-2);
-}
-
-header{
-	position:fixed;
 }
 
 	/* nav bar */
