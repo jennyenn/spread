@@ -3,9 +3,6 @@
 /* variables */
 :root {
 
-	/* style guide  */
-	--font-family: "Instrument Sans", sans-serif;
-
 	/* paragraph  */
 	--paragraph-family: "Instrument Sans", sans-serif;
 	--paragraph-size: 18px; 
@@ -17,7 +14,7 @@
 	--blockquote-size: 24px; 
 	--blockquote-style: medium;
 	--blockquote-spacing: 2rem;
-	--h1-color: #DA3946;
+	--blockquote-color: #DA3946;
 
 	/* h1 */
 	--h1-family: "Instrument Sans", sans-serif;
@@ -28,13 +25,35 @@
 	--h1-color: #DA3946;
 
 	/* h2 */
+	--h2-family: "Instrument Sans", sans-serif;
 	--h2-size: 40px; 
+	--h2-style: medium;
 
 	/* h3 */
-	--h2-size: 32px; 
+	--h3-family: "Instrument Sans", sans-serif;
+	--h3-size: 32px; 
+	--h3-style: medium;
+
+	/* links */
+	--links-family: "Instrument Sans", sans-serif;
+	--links-size: 18px; 
+	--links-style: bold;
+	--links-spacing: 2rem;
+
+	/* spacing */
+	--spacing-1: 16px;
+	--spacing-2: 32px; 
+	--spacing-3: 48px;
+	--spacing-4: 64px;
+	--spacing-5: 80px;
+	--spacing-6: 96px;
 
 }
 
+	/* heading styles */
+body{
+	margin: var(--spacing-2);
+}
 h1 {
 	font-family: var(--h1-family);
 	font-size: var(--h1-size);
@@ -45,18 +64,34 @@ h1 {
 }
 
 h2 {
+	font-family: var(--h2-family);
 	font-size: var(--h2-size);
+	font-style: var(--h2-style);
 }
 
 h3 {
+	font-family: var(--h3-family);
 	font-size: var(--h3-size);
+	font-style: var(--h3-style);
+}
+
+	/* body styles */
+
+blockquote {
+	font-family: var(--blockquote-family);
+	font-size: var(--blockquote-size);
+	font-style: var(--blockquote-style);
+	line-height: var(--blockquote-spacing);
+	color: var(--blockquote-color);
+	margin: var(--spacing-2);
 }
 
 p {
 	font-family: var(--paragraph-family);
 	font-size: var(--paragraph-size);
 	font-style: var(--paragraph-style);
-	margin-bottom: var(--paragraph-spacing);
+	line-height: var(--paragraph-spacing);
+	margin-bottom: var(--spacing-1);
 }
 
 ol {
