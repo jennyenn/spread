@@ -194,49 +194,138 @@ ol ol {
 	border-right: 1px solid #DA3946;
 }
 
- 		/* positioning for each letter in "words as material"*/
+/* Defining the animation for "W"*/
+
+@keyframes w-moves {
+	0% {
+	translateY(0%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateY(24px) translateX(2px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-40%); /* Ending point */
+	}
+}
+
+#w {
+	transform: translateY(0%) translateX(-40%);
+	clip-path: inset(0); 
+	animation: w-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "O"*/
+
+@keyframes o-moves {
+	0% {
+	translateY(-60%) translateX(-10%);; /* Starting point */
+	}
+	50% {
+	transform: translateY(0px) translateX(16px); /* Moving to this location */
+	}
+	100% {
+	translateY(-60%) translateX(-10%);; /* Ending point */
+	}
+}
+
+#o {
+	transform: translateY(-60%) translateX(-10%);
+	clip-path: inset(0); 
+	animation: o-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "R"*/
+
+@keyframes r1-moves {
+	0% {
+	translateY(-10%) translateX(-80%);; /* Starting point */
+	}
+	50% {
+	transform: translateY(16px); /* Moving to this location */
+	}
+	100% {
+	translateY(-10%) translateX(-80%);; /* Ending point */
+	}
+}
+
+#r1 {
+	transform: translateY(-10%) translateX(-80%);
+	clip-path: inset(0); 
+	animation: r1-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "D"*/
+
+/* Defining the animation for "S"*/
+
+/* Defining the animation for "M"*/
+
+
+
+@keyframes m-moves {
+	0% {
+	translateY(-30%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(-30%) translateX(-40%); /* Ending point */
+	}
+}
 
 #m {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
+	animation: m-moves 5s ease-in-out infinite;
 }
+
+/* Defining the animation for "A"*/
 
 #a2 {
 	transform: translateY(0%) translateX(-60%);
 	clip-path: inset(top right bottom left);
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #t {
 	transform: translateY(0%) translateX(-60%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #e {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #e {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(-15%) translateX(-70%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #r {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(-10%) translateX(-60%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #i {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
-#a4 {
+#a3 {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
 
 #l {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
+	animation: movebackandforth 5s ease-in-out infinite;
 }
