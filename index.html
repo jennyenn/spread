@@ -11,28 +11,30 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="nav-left"><strong>Words</strong> as Material</div>
-				<div class="hamburger">☰</div>
-			</nav>
-			<div class="menu">
-				<ul>
-					<li><a href="#How design works">How design works</a></li>
-					<li><a href="#How communication works">How communication works</a></li>
-					<li><a href="#How writing fits in">How writing fits in</a></li>
-					<li><a href="#What are words for">What are words for</a></li>
-					<li><a href="#Understand and clarify the problem">Understand and clarify the problem</a></li>
-					<li><a href="#More people, more problems">More people, more problems</a></li>
-				</ul>
+			<div>
+				<nav class="sticky">
+					<div class="nav-left"><strong>Words</strong> as Material</div>
+					<div class="hamburger">☰</div>
+				</nav>
+				<div class="menu">
+					<ul>
+						<li><a href="#How design works">How design works</a></li>
+						<li><a href="#How communication works">How communication works</a></li>
+						<li><a href="#How writing fits in">How writing fits in</a></li>
+						<li><a href="#What are words for">What are words for</a></li>
+						<li><a href="#Understand and clarify the problem">Understand and clarify the problem</a></li>
+						<li><a href="#More people, more problems">More people, more problems</a></li>
+					</ul>
+				</div>
+				<!-- javascipt -->
+				<script>
+					const hamburger = document.querySelector('.hamburger');
+					const menu = document.querySelector('.menu');
+					hamburger.addEventListener('click', function() {
+					menu.classList.toggle('active');
+					});
+				</script>
 			</div>
-			<!-- javascipt -->
-			<script>
-				const hamburger = document.querySelector('.hamburger');
-				const menu = document.querySelector('.menu');
-				hamburger.addEventListener('click', function() {
-            	menu.classList.toggle('active');
-       			 });
-			</script>
 		</header>
 
 		<h1>
@@ -161,7 +163,7 @@
 					</P>		
 				</section>
 				<section id="How communication works">
-					<h2>How communication works</h2>
+					<h2  class="sticky">How communication works</h2>
 					<P>
 						So I've been thinking about what communication looks like in the design process. Here's my take:</P>
 					<div >
@@ -195,7 +197,7 @@
 					</p>
 				</section>
 				<section id="How writing fits in">
-					<h2>How writing fits in</h2>
+					<h2  class="sticky">How writing fits in</h2>
 					<p>
 						This outward arc or continuum is the same one that I go through as a writer. I think and sketch and jot down notes; I question my assumptions; I struggle to understand. Later, when I have a sense of what I need to do, I share drafts and take in feedback; I try different variations and keep refining the work until it's ready for the public.
 					</p>
@@ -215,7 +217,7 @@
 					</P>
 				</section>
 				<section id="The gap between us">
-					<h2>The gap between us</h2>
+					<h2  class="sticky">The gap between us</h2>
 					<p>
 						I want to focus on writing today, because I've noticed a huge gap between writers and designers in the professional world. And I think it contributes to the larger communication problems we face. We're often on separate teams in separate buildings. We have the same goals and audiences, but we're rarely seen as partners or equals.
 					</p>
@@ -241,7 +243,7 @@
 					</p>
 				</section>
 				<section id="What are words for">
-					<h2>What are words for</h2>
+					<h2  class="sticky">What are words for</h2>
 					<p>
 						Words shape our ideas, how we see the world, and how we relate to one another. As design teacher and researcher <underline>Anne Galloway</underline> says:
 						<blockquote>
@@ -272,7 +274,7 @@
 					</P>
 				</section>
 				<section id="Understand and clarify the problem">
-					<h2>Understand and clarify the problem</h2>
+					<h2  class="sticky">Understand and clarify the problem</h2>
 					<p>
 						But I've also come to see writing as a material in itself. Something we can play with and manipulate. Something that can change over time as questions come up in the design process or an idea evolves. Writing can be a tool for talking to ourselves when we're still figuring things out. A sort of mirror or feedback system. A way to understand and articulate design.
 					</p>
@@ -298,7 +300,7 @@
 					</p>
 				</section>
 				<section id="More people, more problems">
-					<h2>More people, more problems</h2>
+					<h2  class="sticky">More people, more problems</h2>
 					<p>
 						Let's go back to those communication problems we talked about. I'll focus on these four in particular:
 					</p>
@@ -316,7 +318,7 @@
 							(As an aside, whenever I use the word “client,” that could be a product lead or someone you work with. Whoever's in charge of the product vision.)
 						</aside>
 					</p>
-					<h3>1. No product vision</h3>
+					<h3  class="sticky">1. No product vision</h3>
 					<p>
 						Conflicting ideas are one thing—but it's even harder to talk about an idea when there is no idea. I'm selfishly starting with this one, because I've seen it a lot in the past few years.
 					</p>
@@ -359,7 +361,7 @@
 					<p>
 						As you start to externalize your idea, it's not enough to imagine a good outcome or define why it matters. You also have to articulate your goals so people can rally around them. That brings me to another communication problem: conflicting goals and expectations.
 					</p>
-					<h3>2. Different goals and expectations</h3>
+					<h3  class="sticky">2. Different goals and expectations</h3>
 					<p>
 						Jean-Paul Sartre is known for saying, <q>L'enfer, c'est les autres.</q> But my friend Frank Chimero says, <q>Hell is other people's undocumented assumptions.</q>
 					</p>
@@ -446,7 +448,7 @@
 					<p>
 						Let's move on to the next one.
 					</p>
-					<h3>3. Oversimplifying the problem</h3>
+					<h3 class="sticky"> 3. Oversimplifying the problem</h3>
 					<p>
 						This one may be a personal peeve, but I'm sure you've experienced it before. Be wary of limiting language, absolutes, and either/or statements. Here are some examples I've heard:
 					</p>
@@ -473,7 +475,7 @@
 					<p>
 						Another way to avoid this problem is to work through different variations. If you think there's more than one way to approach a problem, show how that plays out in the interface. Whenever I'm presenting ideas, I like to share 3 or more options. People tend to make better decisions when there are a few things to choose from. It also gives you a chance to be creative. Don't get stuck on a content structure or specific wording in design concepts. Explore your options in the language too.
 					</p>
-					<h3>4. Design doesn't sell itself</h3>
+					<h3  class="sticky">4. Design doesn't sell itself</h3>
 					<p>
 						We all know good design doesn't sell itself. If it did, Apple wouldn't spend a gazillion dollars a year on advertising. If you're working on a Kickstarter or selling design to the public, you'll have to explain yourself a little bit. You can use words as material in that process. For me, that often looks like the Mad Libs exercise I showed you. I also have a bunch of product questions that I like to ask. It's almost like a spec sheet for planning out the content.
 					</p>

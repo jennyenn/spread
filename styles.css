@@ -71,6 +71,7 @@ h1 {
 	color: var(--h1-color);
 	margin-bottom: var(--spacing-3);
 	flex-direction: row;
+	
 }
 
 h2 {
@@ -78,6 +79,7 @@ h2 {
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
 	margin: 0px var(--spacing-2);
+	background-color: white;
 }
 
 h3 {
@@ -86,6 +88,7 @@ h3 {
 	font-style: var(--h3-style);
 	margin-bottom: var(--spacing-2);
 	margin: 0px var(--spacing-2);
+	background-color: white;
 }
 
 	/* body styles */
@@ -156,6 +159,7 @@ nav {
 	background-color: white;
 	padding: var(--spacing-3) var(--spacing-3);
 	color: black;
+	position: sticky;
 }
 
 .nav-left {
@@ -197,6 +201,12 @@ nav strong{
 	nav{
 		flex-direction: row;
 	}
+}
+
+.sticky{
+	top: 0;
+	position: sticky;
+	z-index:1000;
 }
 
 	/* chapter */
