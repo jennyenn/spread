@@ -53,6 +53,8 @@
 	--spacing-4: 64px;
 	--spacing-5: 80px;
 	--spacing-6: 96px;
+	--spacing-7: 112px;
+	--spacing-8: 128px;
 
 }
 
@@ -166,6 +168,20 @@ ol ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (min-width: 744px) {
+	.square { 
+	width: var(--spacing-6);
+	height: var(--spacing-6);
+	}
+}
+
+@media (min-width: 1512px) {
+	.square { 
+	width: var(--spacing-8);
+	height: var(--spacing-8);
+	}
 }
 
 #lastsquare { 	/* adding line to the end of the squares */
