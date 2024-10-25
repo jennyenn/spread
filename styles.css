@@ -194,11 +194,13 @@ ol ol {
 	border-right: 1px solid #DA3946;
 }
 
+/* Defining the animations for "WORDS"*/
+
 /* Defining the animation for "W"*/
 
 @keyframes w-moves {
 	0% {
-	translateY(0%) translateX(-40%); /* Starting point */
+	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
 	transform: translateY(24px) translateX(2px); /* Moving to this location */
@@ -218,7 +220,7 @@ ol ol {
 
 @keyframes o-moves {
 	0% {
-	translateY(-60%) translateX(-10%);; /* Starting point */
+	transform: translateY(-60%) translateX(-10%); /* Starting point */
 	}
 	50% {
 	transform: translateY(0px) translateX(16px); /* Moving to this location */
@@ -238,10 +240,10 @@ ol ol {
 
 @keyframes r1-moves {
 	0% {
-	translateY(-10%) translateX(-80%);; /* Starting point */
+	transform: translateY(-10%) translateX(-80%);; /* Starting point */
 	}
 	50% {
-	transform: translateY(16px); /* Moving to this location */
+	transform: translateY(-16px); /* Moving to this location */
 	}
 	100% {
 	translateY(-10%) translateX(-80%);; /* Ending point */
@@ -256,15 +258,93 @@ ol ol {
 
 /* Defining the animation for "D"*/
 
-/* Defining the animation for "S"*/
+@keyframes d-moves {
+0% {
+	transform: translateY(-30%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(-30%) translateX(-40%); /* Ending point */
+	}
+}
+
+#d {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(10); 
+	animation: d-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "S" in "Words"*/
+
+@keyframes s1-moves {
+0% {
+	transform: translateY(0%) translateX(-80%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-80%); /* Ending point */
+	}
+	}
+	
+#s1 {
+	transform: translateY(0%) translateX(-80%);
+	clip-path: inset(10); 
+	animation: s1-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animations for "AS"*/
+
+/* Defining the animation for "A" in "As"*/
+
+@keyframes a1-moves {
+0% {
+	transform: translateY(-90%) translateX(-20%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(-90%) translateX(-20%); /* Ending point */
+	}
+	}
+	
+#a1 {
+	transform: translateY(-90%) translateX(-20%);
+	clip-path: inset(10); 
+	animation: a1-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animations for "S" in "AS"*/
+
+@keyframes s2-moves {
+0% {
+	transform: (10%) translateX(-10%); /* Starting point */
+	}
+	50% {
+	transform: translateX(-16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(10%) translateX(-10%); /* Ending point */
+	}
+	}
+	
+#s2 {
+	transform: translateY(10%) translateX(-10%);
+	clip-path: inset(10); 
+	animation: s1-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animations for "MATERIAL"*/
 
 /* Defining the animation for "M"*/
 
-
-
 @keyframes m-moves {
 	0% {
-	translateY(-30%) translateX(-40%); /* Starting point */
+	transform: translateY(-30%) translateX(-40%); /* Starting point */
 	}
 	50% {
 	transform: translateX(16px); /* Moving to this location */
@@ -280,52 +360,142 @@ ol ol {
 	animation: m-moves 5s ease-in-out infinite;
 }
 
-/* Defining the animation for "A"*/
+/* Defining the animation for "A" in material*/
+
+@keyframes a2-moves {
+	0% {
+	transform: translateY(0%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-40%); /* Ending point */
+	}
+}
 
 #a2 {
-	transform: translateY(0%) translateX(-60%);
-	clip-path: inset(top right bottom left);
-	animation: movebackandforth 5s ease-in-out infinite;
+	transform: translateY(0%) translateX(-40%);
+	clip-path: inset(0); 
+	animation: a2-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "T"*/
+
+@keyframes t-moves {
+	0% {
+	transform: translateY(0%) translateX(-30%); /* Starting point */
+	}
+	50% {
+	transform: translateY(8px) translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-30%); /* Ending point */
+	}
 }
 
 #t {
-	transform: translateY(0%) translateX(-60%);
+	transform: translateY(0%) translateX(-30%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: t-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "E"*/
+
+@keyframes e-moves {
+	0% {
+	transform: translateY(80%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(80%) translateX(-40%); /* Ending point */
+	}
 }
 
 #e {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(80%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: e-moves 5s ease-in-out infinite;
 }
 
-#e {
-	transform: translateY(-15%) translateX(-70%);
-	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+/* Defining the animation for "R"*/
+
+@keyframes r2-moves {
+	0% {
+	transform: translateY(0%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(-32px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-40%); /* Ending point */
+	}
 }
 
-#r {
-	transform: translateY(-10%) translateX(-60%);
+#r2 {
+	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: r2-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for "I"*/
+
+@keyframes i-moves {
+	0% {
+	transform: translateY(0%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateY(-32px) translateX(-16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-40%); /* Ending point */
+	}
 }
 
 #i {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: i-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for second "A" in "material"*/
+
+@keyframes a3-moves {
+	0% {
+	transform: translateY(-20%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(-20%) translateX(-40%); /* Ending point */
+	}
 }
 
 #a3 {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(-20%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: a3-moves 5s ease-in-out infinite;
+}
+
+/* Defining the animation for second "L"*/
+
+@keyframes l-moves {
+	0% {
+	transform: translateY(0%) translateX(-40%); /* Starting point */
+	}
+	50% {
+	transform: translateX(16px); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(0%) translateX(-40%); /* Ending point */
+	}
 }
 
 #l {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: movebackandforth 5s ease-in-out infinite;
+	animation: l-moves 5s ease-in-out infinite;
 }
