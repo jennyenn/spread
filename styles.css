@@ -57,6 +57,7 @@
 }
 
 	/* heading styles */
+
 body{
 	font-family: var(--paragraph-family);
 	margin: var(--spacing-2);
@@ -72,7 +73,7 @@ h1 {
 	text-transform: var(--h1-text-transform);
 	color: var(--h1-color);
 	margin-bottom: var(--spacing-3);
-
+	flex-direction: row;
 }
 
 h2 {
@@ -92,6 +93,7 @@ h3 {
 }
 
 	/* body styles */
+
 section {
 	margin-bottom: var(--spacing-6);
 }
@@ -136,4 +138,18 @@ ol {
 
 ol ol {
 	flex-direction: column;
+}
+
+.square-container {
+    display: flex; 
+    gap: 10px; 
+}
+
+.square {
+	width: 150px;
+    height: 150px;
+    border: 2px solid #DA3946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
