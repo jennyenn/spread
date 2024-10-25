@@ -1,15 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* variables */
+:root {
 
-:root{
-	--root-size:1.2rem;
-	--fg-color: #ff000000;
+	/* style guide  */
+	--font-family: "Instrument Sans", sans-serif;
+
+	/* paragraph  */
+	--paragraph-family: "Instrument Sans", sans-serif;
+	--paragraph-size: 18px; 
+	--paragraph-style: normal;
+	--paragraph-spacing: 2rem;
+
+	/* blockquotes */
+	--blockquote-family: "Instrument Sans", sans-serif;
+	--blockquote-size: 24px; 
+	--blockquote-style: medium;
+	--blockquote-spacing: 2rem;
+	--h1-color: #DA3946;
+
+	/* h1 */
+	--h1-family: "Instrument Sans", sans-serif;
+	--h1-size: 64px; 
+	--h1-style: medium;
+	--h1-spacing: 2rem;
+	--h1-text-transform: uppercase;
+	--h1-color: #DA3946;
+
+	/* h2 */
+	--h2-size: 40px; 
+
+	/* h3 */
+	--h2-size: 32px; 
+
 }
 
-body{
-	font-size: var(18px)
+h1 {
+	font-family: var(--h1-family);
+	font-size: var(--h1-size);
+	font-style: var(--h1-style);
+	margin-bottom: var(--h1-spacing);
+	text-transform: var(--h1-text-transform);
+	color: var(--h1-color);
 }
 
-ol{
+h2 {
+	font-size: var(--h2-size);
+}
+
+h3 {
+	font-size: var(--h3-size);
+}
+
+p {
+	font-family: var(--paragraph-family);
+	font-size: var(--paragraph-size);
+	font-style: var(--paragraph-style);
+	margin-bottom: var(--paragraph-spacing);
+}
+
+ol {
 	display: flex;
 	flex-wrap: nowrap;
 }
