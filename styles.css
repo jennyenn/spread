@@ -26,6 +26,7 @@
 	--paragraph-size: 18px; 
 	--paragraph-style: normal;
 	--paragraph-spacing: 2rem;
+	--paragraph-line-height:1.5rem;
 
 	/* blockquotes */
 	--blockquote-family: "Instrument Sans", sans-serif;
@@ -145,6 +146,7 @@ p {
 	line-height: var(--paragraph-spacing);
 	margin-bottom: var(--spacing-1);
 	margin: var(--spacing-2);
+	line-height: var(--paragraph-line-height);
 }
 
 time{
