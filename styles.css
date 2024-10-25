@@ -29,7 +29,7 @@
 
 	/* blockquotes */
 	--blockquote-family: "Instrument Sans", sans-serif;
-	--blockquote-size: 24px; 
+	--blockquote-size: 28px; 
 	--blockquote-style: medium;
 	--blockquote-spacing: 2rem;
 	--blockquote-color: #DA3946;
@@ -141,12 +141,16 @@ time{
 
 	/* nav bar */
 
+/* header nav{
+	position: fixed;
+} */
+
 nav {
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	padding: var(--spacing-3) var(--spacing-5);
+	padding: var(--spacing-3) var(--spacing-3);
 	color: black;
 }
 
@@ -189,6 +193,15 @@ nav strong{
 	nav{
 		flex-direction: row;
 	}
+}
+
+	/* chapter */
+
+.chapter{
+	color:#DA3946;
+	margin-left: var(--spacing-3);
+	margin-top: var(--spacing-3);
+	text-decoration: none  !important;
 }
 
 	/* flexblox(should be added into class later) */
