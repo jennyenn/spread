@@ -60,12 +60,6 @@
 
 	/* heading styles */
 
-body{
-	font-family: var(--paragraph-family);
-	max-width: 80ch;
-	color: #02010F;
-}
-
 h1 {
 	font-family: var(--h1-family);
 	font-size: var(--h1-size);
@@ -93,6 +87,13 @@ h3 {
 }
 
 	/* body styles */
+
+body{
+	font-family: var(--paragraph-family);
+	max-width: 80ch;
+	color: #02010F;
+}
+	
 
 section {
 	margin-bottom: var(--spacing-6);
@@ -138,8 +139,59 @@ time{
 	margin: var(--spacing-2);
 }
 
-	/* header */
+	/* nav bar */
 
+nav {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: var(--spacing-3) var(--spacing-5);
+	color: black;
+}
+
+.nav-left {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-style: normal;
+}
+
+nav strong{
+	font-style: medium;
+}
+
+.hamburger{
+	cursor: pointer;
+	font-size: 30px;
+	color: #DA3946;
+}
+
+.menu{
+	display: none;
+	background-color: white;
+	border: 1px solid #DA3946;
+	margin-bottom: var(--spacing-3);
+}
+
+.menu.active {
+	display: block;
+}
+
+.menu li{
+	padding: 10px 0px;
+}
+.menu li a{
+	color:black;
+	text-decoration: none;
+}
+
+@media (max-width:768px){
+	nav{
+		flex-direction: row;
+	}
+}
+
+	/* flexblox(should be added into class later) */
 ol {
 	display: flex;
 	flex-wrap: nowrap;
