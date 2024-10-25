@@ -690,3 +690,10 @@ ol ol {
 	clip-path: inset(0); 
 	animation: l-moves 5s ease-in-out infinite;
 }
+
+footer{
+	display:flex;
+	background-color: #DA3946;
+	color:white;
+	padding: var(--spacing-1);
+}
