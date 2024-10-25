@@ -233,6 +233,8 @@ nav strong{
 	border-bottom: 1px solid #DA3946;
 }
 
+	/* questions lists */
+
 .questions_list{
 	font-family: var(--blockquote-family);
 	font-size: 48px;
@@ -249,15 +251,17 @@ nav strong{
 
 .container{
 	display: flex;
-	aligh-items: flex-sart;
+	align-items: flex-sart;
 	justify-content: space-between;
 	width:100%;
+	margin: var(--spacing-3);
 }
 
 .left-sction{
 	flex:1;
 	font-size: var(--paragraph-size);
 	margin-right: var(--spacing-2);
+	padding-top: 0px;
 }
 .right-section{
 	flex:2;
@@ -275,6 +279,16 @@ nav strong{
 	font-size: var(--paragraph-size);
 	border-radius: 5px;
 	cursor:pointer;
+}
+
+.multiple-choices button:hover{
+	background-color: #DA3946;
+	color: white;
+}
+
+.multiple-choices button:active{
+	background-color: #DA3946;
+	color: white;
 }
 
 	/* flexblox(should be added into class later) */
