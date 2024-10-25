@@ -3,19 +3,6 @@
 /* variables */
 :root {
 
-	/* paragraph  */
-	--paragraph-family: "Instrument Sans", sans-serif;
-	--paragraph-size: 18px; 
-	--paragraph-style: normal;
-	--paragraph-spacing: 2rem;
-
-	/* blockquotes */
-	--blockquote-family: "Instrument Sans", sans-serif;
-	--blockquote-size: 24px; 
-	--blockquote-style: medium;
-	--blockquote-spacing: 2rem;
-	--blockquote-color: #DA3946;
-
 	/* h1 */
 	--h1-family: "Instrument Sans", sans-serif;
 	--h1-size: 64px; 
@@ -34,11 +21,30 @@
 	--h3-size: 32px; 
 	--h3-style: medium;
 
+	/* paragraph  */
+	--paragraph-family: "Instrument Sans", sans-serif;
+	--paragraph-size: 18px; 
+	--paragraph-style: normal;
+	--paragraph-spacing: 2rem;
+
+	/* blockquotes */
+	--blockquote-family: "Instrument Sans", sans-serif;
+	--blockquote-size: 24px; 
+	--blockquote-style: medium;
+	--blockquote-spacing: 2rem;
+	--blockquote-color: #DA3946;
+
 	/* links */
 	--links-family: "Instrument Sans", sans-serif;
 	--links-size: 18px; 
 	--links-style: bold;
-	--links-spacing: 2rem;
+	--links-text-decoration: underline;
+
+	/* list */
+	--list-family: "Instrument Sans", sans-serif;
+	--list-size: 18px; 
+	--list-style: bold;
+	--list-spacing: 2rem;	
 
 	/* spacing */
 	--spacing-1: 16px;
@@ -52,7 +58,11 @@
 
 	/* heading styles */
 body{
+	font-family: var(--paragraph-family);
 	margin: var(--spacing-2);
+	max-width: 80ch;
+	color: #02010F;
+
 }
 h1 {
 	font-family: var(--h1-family);
@@ -61,21 +71,30 @@ h1 {
 	margin-bottom: var(--h1-spacing);
 	text-transform: var(--h1-text-transform);
 	color: var(--h1-color);
+	margin-bottom: var(--spacing-3);
+
 }
 
 h2 {
 	font-family: var(--h2-family);
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
+	margin-bottom: var(--spacing-2);
+
 }
 
 h3 {
 	font-family: var(--h3-family);
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
+	margin-bottom: var(--spacing-2);
+
 }
 
 	/* body styles */
+section {
+	margin-bottom: var(--spacing-6);
+}
 
 blockquote {
 	font-family: var(--blockquote-family);
@@ -83,7 +102,23 @@ blockquote {
 	font-style: var(--blockquote-style);
 	line-height: var(--blockquote-spacing);
 	color: var(--blockquote-color);
-	margin: var(--spacing-2);
+	margin-bottom: var(--spacing-2);
+}
+
+li {
+	font-family: var(--list-family);
+	font-size: var(--list-size);
+	font-style: var(--list-style);
+	line-height: var(--list-spacing);
+	text-decoration: var(--list-text-decoration);
+}
+
+a {
+	font-family: var(--links-family);
+	font-size: var(--links-size);
+	font-style: var(--links-style);
+	line-height: var(--links-spacing);
+	text-decoration: var(--links-text-decoration);
 }
 
 p {
