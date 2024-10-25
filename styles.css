@@ -33,6 +33,8 @@
 	--blockquote-style: medium;
 	--blockquote-spacing: 2rem;
 	--blockquote-color: #DA3946;
+	--blockquote-border-left:1px solid #DA3946;
+	--blockquote-padding-left:20px;
 
 	/* links */
 	--links-family: "Instrument Sans", sans-serif;
@@ -107,6 +109,8 @@ blockquote {
 	color: var(--blockquote-color);
 	margin-bottom: var(--spacing-2);
 	margin: 0px var(--spacing-2);
+	border-left: var(--blockquote-border-left);
+	padding-left: var(--blockquote-padding-left);
 }
 
 li {
@@ -201,7 +205,18 @@ nav strong{
 	color:#DA3946;
 	margin-left: var(--spacing-3);
 	margin-top: var(--spacing-3);
-	text-decoration: none  !important;
+}
+
+	/* summary */
+
+.summary{
+	font-family: var(--blockquote-family);
+	font-size: var(--blockquote-size);
+	font-style: var(--blockquote-style);
+	line-height: var(--blockquote-spacing);
+	color: var(--blockquote-color);
+	margin: var(--spacing-1) var(--spacing-2);
+	border-bottom: 1px solid #DA3946;
 }
 
 	/* flexblox(should be added into class later) */
@@ -213,6 +228,9 @@ ol {
 ol ol {
 	flex-direction: column;
 }
+
+
+
 
 	/* title */
 
