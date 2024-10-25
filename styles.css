@@ -136,6 +136,8 @@ time{
 	margin: var(--spacing-2);
 }
 
+	/* header */
+
 ol {
 	display: flex;
 	flex-wrap: nowrap;
@@ -145,6 +147,8 @@ ol ol {
 	flex-direction: column;
 }
 
+	/* title */
+
 .square-container {
     display: flex; 
 	background-color: white;
@@ -153,16 +157,16 @@ ol ol {
 
 .square {
 	width: var(--spacing-5);
-    height: var(--spacing-5);
-    border-left: 1px solid #DA3946;
+	height: var(--spacing-5);
+	border-left: 1px solid #DA3946;
 	border-top: 1px solid #DA3946;
 	border-bottom: 1px solid #DA3946;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#lastsquare {
+#lastsquare { 	/* adding line to the end of the squares */
 	border-right: 1px solid #DA3946;
 }
 
@@ -171,13 +175,64 @@ ol ol {
 	border-bottom: 0px;
 }
 
+#bottomsquarecontainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#bottomsquare {
+	border-top: 0px;
+}
+
+#s-square{ 
+	border-top: 0px solid #DA3946;
+	border-bottom: 0px solid #DA3946;
+	border-right: 1px solid #DA3946;
+}
+
+ 		/* positioning for each letter in "words as material"*/
+
 #m {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
 }
 
-#s{
-	border-top: 0px solid #DA3946;
-	border-bottom: 0px solid #DA3946;
-	border-right: 1px solid #DA3946;
+#a2 {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#t {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#e {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#e {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#r {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#i {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#a4 {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
+}
+
+#l {
+	transform: translateY(-30%) translateX(-40%);
+	clip-path: inset(0); 
 }
