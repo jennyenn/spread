@@ -19,34 +19,33 @@
 
 	/* h3 */
 	--h3-family: "Instrument Sans", sans-serif;
-	--h3-size: 32px; 
+	--h3-size: calc(var(--h1-size) / 2.5); 
 	--h3-style: medium;
 
 	/* paragraph  */
 	--paragraph-family: "Instrument Sans", sans-serif;
 	--paragraph-size: 1.25rem; 
 	--paragraph-style: normal;
-	--paragraph-spacing: 2rem;
-	--paragraph-line-height:1.5rem;
+	--paragraph-line-height: 1.75rem;
 
 	/* blockquotes */
 	--blockquote-family: "Instrument Sans", sans-serif;
-	--blockquote-size: 28px; 
+	--blockquote-size: 1.75rem; 
 	--blockquote-style: medium;
-	--blockquote-spacing: 2rem;
+	--blockquote-spacing: 2.25rem;
 	--blockquote-color: #DA3946;
 	--blockquote-border-left:1px solid #DA3946;
 	--blockquote-padding-left:20px;
 
 	/* links */
 	--links-family: "Instrument Sans", sans-serif;
-	--links-size: 18px; 
+	--links-size: 1.25rem; 
 	--links-style: bold;
 	--links-text-decoration: underline;
 
 	/* list */
 	--list-family: "Instrument Sans", sans-serif;
-	--list-size: 18px; 
+	--list-size: 1.25rem;
 	--list-style: bold;
 	--list-spacing: 2rem;	
 
@@ -116,10 +115,8 @@ h3 {
 	background-color: #DA3946;
 	width: 100%;
 	color: white;
-	padding: 0px var(--spacing-2);
+	padding: var(--spacing-1);
 }
-
-
 
 	/* body styles */
 
@@ -169,14 +166,9 @@ p {
 	font-family: var(--paragraph-family);
 	font-size: var(--paragraph-size);
 	font-style: var(--paragraph-style);
-	line-height: var(--paragraph-spacing);
 	margin-bottom: var(--spacing-1);
 	margin: var(--spacing-1);
 	line-height: var(--paragraph-line-height);
-}
-
-time{
-	margin: var(--spacing-2);
 }
 
 .author{
@@ -397,41 +389,6 @@ ol ol {
 	border-left: 1px solid #DA3946;
 }
 
-/* .square-container {
-	display: flex; 
-	background-color: white;
-	overflow: hidden;
-	position: relative;
-	width: 100%; 
-} */
-
-/* .square {
-	width: var(--spacing-5);
-	height: var(--spacing-5);
-	border-top: 1px solid #DA3946;
-	border-bottom: 1px solid #DA3946;
-	border-left: 1px solid #DA3946;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-} */
-
-/* @media (min-width: 744px) {
-	.square { 
-	width: var(--spacing-6);
-	height: var(--spacing-6);
-	}
-}
-
-@media (min-width: 1512px) {
-	.square { 
-	width: var(--spacing-8);
-	height: var(--spacing-8);
-	}
-} */
-
-
 /* Defining the animations for "WORDS"*/
 
 /* Defining the animation for "W"*/
@@ -451,7 +408,7 @@ ol ol {
 #w {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: w-moves 5s ease-in-out 12;
+	animation: w-moves 3s ease-in-out 12;
 }
 
 /* Defining the animation for "O"*/
@@ -461,7 +418,7 @@ ol ol {
 	transform: translateY(-40%) translateX(0%); /* Starting point */
 	}
 	50% {
-	transform: translateY(-16px); /* Moving to this location */
+	transform: translateY(-12px); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(-40%) translateX(0%); /* Ending point */
@@ -471,29 +428,29 @@ ol ol {
 #o {
 	transform: translateY(-40%) translateX(0%);
 	clip-path: inset(0); 
-	animation: o-moves 5s ease-in-out 12;
-	animation-delay: 2s;
+	animation: o-moves 3s ease-in-out 12;
+	animation-delay: 1s;
 }
 
 /* Defining the animation for "R"*/
 
 @keyframes r1-moves {
 	0% {
-	transform: translateY(-10%) translateX(-80%); /* Starting point */
+	transform: translateY(10%) translateX(-80%); /* Starting point */
 	}
 	50% {
-	transform: translateY(-16px); /* Moving to this location */
+	transform: translateY(-12px); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-10%) translateX(-80%); /* Ending point */
+	transform: translateY(10%) translateX(-80%); /* Ending point */
 	}
 }
 
 #r1 {
-	transform: translateY(-10%) translateX(-80%);
+	transform: translateY(10%) translateX(-80%);
 	clip-path: inset(0); 
-	animation: r1-moves 5s ease-in-out 12;
-	animation-delay: 6s;
+	animation: r1-moves 3s ease-in-out 12;
+	animation-delay: 3s;
 }
 
 /* Defining the animation for "D"*/
@@ -513,8 +470,8 @@ ol ol {
 #d {
 	transform: translateY(-30%) translateX(-65%);
 	clip-path: inset(10); 
-	animation: d-moves 5s ease-in-out 12;
-	animation-delay: 8s;
+	animation: d-moves 3s ease-in-out 12;
+	animation-delay: 4s;
 }
 
 /* Defining the animation for "S" in "Words"*/
@@ -534,8 +491,8 @@ ol ol {
 #s1 {
 	transform: translateY(0%) translateX(-80%);
 	clip-path: inset(10); 
-	animation: s1-moves 5s ease-in-out 12;
-	animation-delay: 10s;
+	animation: s1-moves 3s ease-in-out 12;
+	animation-delay: 5s;
 }
 
 /* Defining the animations for "AS"*/
@@ -544,20 +501,21 @@ ol ol {
 
 @keyframes a1-moves {
 0% {
-	transform: translateY(-90%) translateX(-20%); /* Starting point */
+	transform: translateY(-60%) translateX(-20%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(16px); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-90%) translateX(-20%); /* Ending point */
+	transform: translateY(-60%) translateX(-20%); /* Ending point */
 	}
 	}
 	
 #a1 {
-	transform: translateY(-90%) translateX(-20%);
+	transform: translateY(-60%) translateX(-20%);
 	clip-path: inset(10); 
-	animation: a1-moves 5s ease-in-out infinite;
+	animation: a1-moves 3s ease-in-out 12;
+	animation-delay: 6s;
 }
 
 /* Defining the animations for "S" in "AS"*/
@@ -577,7 +535,8 @@ ol ol {
 #s2 {
 	transform: translateY(10%) translateX(-10%);
 	clip-path: inset(10); 
-	animation: s1-moves 5s ease-in-out infinite;
+	animation: s2-moves 3s ease-in-out 12;
+	animation-delay: 7s;
 }
 
 /* Defining the animations for "MATERIAL"*/
@@ -599,7 +558,8 @@ ol ol {
 #m {
 	transform: translateY(-30%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: m-moves 5s ease-in-out infinite;
+	animation: m-moves 3s ease-in-out 12;
+	animation-delay: 8s;
 }
 
 /* Defining the animation for "A" in material*/
@@ -619,7 +579,8 @@ ol ol {
 #a2 {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: a2-moves 5s ease-in-out infinite;
+	animation: a2-moves 3s ease-in-out 12;
+	animation-delay: 9s;
 }
 
 /* Defining the animation for "T"*/
@@ -639,7 +600,8 @@ ol ol {
 #t {
 	transform: translateY(0%) translateX(-30%);
 	clip-path: inset(0); 
-	animation: t-moves 5s ease-in-out infinite;
+	animation: t-moves 3s ease-in-out 12;
+	animation-delay: 10s;
 }
 
 /* Defining the animation for "E"*/
@@ -659,7 +621,8 @@ ol ol {
 #e {
 	transform: translateY(80%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: e-moves 5s ease-in-out infinite;
+	animation: e-moves 3s ease-in-out 12;
+	animation-delay: 11s;
 }
 
 /* Defining the animation for "R"*/
@@ -679,12 +642,13 @@ ol ol {
 #r2 {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: r2-moves 5s ease-in-out infinite;
+	animation: r2-moves 3s ease-in-out 12;
+	animation-delay: 12s;
 }
 
 /* Defining the animation for "I"*/
 
-@keyframes mmoves {
+@keyframes i-moves {
 	0% {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
@@ -699,7 +663,8 @@ ol ol {
 #i {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: i-moves 5s ease-in-out infinite;
+	animation: i-moves 3s ease-in-out 12;
+	animation-delay: 13s;
 }
 
 /* Defining the animation for second "A" in "material"*/
@@ -719,7 +684,8 @@ ol ol {
 #a3 {
 	transform: translateY(-20%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: a3-moves 5s ease-in-out infinite;
+	animation: a3-moves 3s ease-in-out 12;
+	animation-delay: 14s;
 }
 
 /* Defining the animation for second "L"*/
@@ -739,10 +705,8 @@ ol ol {
 #l {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: l-moves 5s ease-in-out infinite;
-
-	--xoff: 50%;
-	--y-offfset: 32%;
+	animation: l-moves 3s ease-in-out 12;
+	animation-delay: 15s;
 }
 
 footer{
