@@ -420,7 +420,7 @@ ol ol {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(-12px); /* Moving to this location */
+	transform: translateX(-30%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-40%); /* Ending point */
@@ -440,7 +440,7 @@ ol ol {
 	transform: translateY(-40%) translateX(0%); /* Starting point */
 	}
 	50% {
-	transform: translateY(-12px); /* Moving to this location */
+	transform: translateY(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(-40%) translateX(0%); /* Ending point */
@@ -458,18 +458,18 @@ ol ol {
 
 @keyframes r1-moves {
 	0% {
-	transform: translateY(10%) translateX(-80%); /* Starting point */
+	transform: translateY(10%) translateX(-70%); /* Starting point */
 	}
 	50% {
-	transform: translateY(-12px); /* Moving to this location */
+	transform: translateY(-5%) translateX(-55%); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(10%) translateX(-80%); /* Ending point */
+	transform: translateY(10%) translateX(-70%); /* Ending point */
 	}
 }
 
 #r1 {
-	transform: translateY(10%) translateX(-80%);
+	transform: translateY(10%) translateX(-70%);
 	clip-path: inset(0); 
 	animation: r1-moves 3s ease-in-out 12;
 	animation-delay: 3s;
@@ -479,18 +479,18 @@ ol ol {
 
 @keyframes d-moves {
 0% {
-	transform: translateY(-30%) translateX(-65%); /* Starting point */
+	transform: translateY(-25%) translateX(-60%); /* Starting point */
 	}
 	50% {
-	transform: translateX(60px); /* Moving to this location */
+	transform: translateY(-10%) translateX(-45%); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-30%) translateX(-65%); /* Ending point */
+	transform: translateY(-25%) translateX(-60%); /* Ending point */
 	}
 }
 
 #d {
-	transform: translateY(-30%) translateX(-65%);
+	transform: translateY(-25%) translateX(-60%);
 	clip-path: inset(10); 
 	animation: d-moves 3s ease-in-out 12;
 	animation-delay: 4s;
@@ -503,7 +503,7 @@ ol ol {
 	transform: translateY(0%) translateX(-80%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateX(-65%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-80%); /* Ending point */
@@ -523,18 +523,18 @@ ol ol {
 
 @keyframes a1-moves {
 0% {
-	transform: translateY(-60%) translateX(-20%); /* Starting point */
+	transform: translateY(-20%) translateX(-20%); /* Starting point */
 	}
 	50% {
-	transform: translateY(16px); /* Moving to this location */
+	transform: translateY(-5%) translateX(-5%); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-60%) translateX(-20%); /* Ending point */
+	transform: translateY(-20%) translateX(-20%); /* Ending point */
 	}
 	}
 	
 #a1 {
-	transform: translateY(-60%) translateX(-20%);
+	transform: translateY(-20%) translateX(-20%);
 	clip-path: inset(10); 
 	animation: a1-moves 3s ease-in-out 12;
 	animation-delay: 6s;
@@ -547,7 +547,7 @@ ol ol {
 	transform: (10%) translateX(-10%); /* Starting point */
 	}
 	50% {
-	transform: translateX(-16px); /* Moving to this location */
+	transform: translateY(-5%) translateX(5%);; /* Moving to this location */
 	}
 	100% {
 	transform: translateY(10%) translateX(-10%); /* Ending point */
@@ -570,7 +570,7 @@ ol ol {
 	transform: translateY(-30%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(-30%) translateX(-40%); /* Ending point */
@@ -591,7 +591,7 @@ ol ol {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-40%); /* Ending point */
@@ -612,7 +612,7 @@ ol ol {
 	transform: translateY(0%) translateX(-30%); /* Starting point */
 	}
 	50% {
-	transform: translateY(8px) translateX(16px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-45%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-30%); /* Ending point */
@@ -630,18 +630,18 @@ ol ol {
 
 @keyframes e-moves {
 	0% {
-	transform: translateY(40%) translateX(-40%); /* Starting point */
+	transform: translateY(-15%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(0%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(40%) translateX(-40%); /* Ending point */
+	transform: translateY(-15%) translateX(-40%); /* Ending point */
 	}
 }
 
 #e {
-	transform: translateY(40%) translateX(-40%);
+	transform: translateY(-15%) translateX(-40%);
 	clip-path: inset(0); 
 	animation: e-moves 3s ease-in-out 12;
 	animation-delay: 11s;
@@ -654,7 +654,7 @@ ol ol {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(-32px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-40%); /* Ending point */
@@ -675,7 +675,7 @@ ol ol {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateY(-32px) translateX(-16px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-40%); /* Ending point */
@@ -693,18 +693,18 @@ ol ol {
 
 @keyframes a3-moves {
 	0% {
-	transform: translateY(-20%) translateX(-40%); /* Starting point */
+	transform: translateY(-5%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(10%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-20%) translateX(-40%); /* Ending point */
+	transform: translateY(-5%) translateX(-40%); /* Ending point */
 	}
 }
 
 #a3 {
-	transform: translateY(-20%) translateX(-40%);
+	transform: translateY(-5%) translateX(-40%);
 	clip-path: inset(0); 
 	animation: a3-moves 3s ease-in-out 12;
 	animation-delay: 14s;
@@ -717,7 +717,7 @@ ol ol {
 	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateY(-15%) translateX(-25%); /* Moving to this location */
 	}
 	100% {
 	transform: translateY(0%) translateX(-40%); /* Ending point */
