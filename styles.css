@@ -5,7 +5,7 @@
 
 	/* h1 */
 	--h1-family: "Instrument Sans", sans-serif;
-	--h1-size: 64px; 
+	--h1-size: 4rem; 
 	--h1-style: medium;
 	--h1-spacing: 2rem;
 	--h1-text-transform: uppercase;
@@ -280,16 +280,18 @@ nav strong{
 
 	/* multiple choices */
 
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-sart;
-	justify-content: space-between;
-	width:100%;
-	margin: var(--spacing-3) 0px;
+@media (min-width: 744px) {
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-sart;
+		justify-content: space-between;
+		width:100%;
+		margin: var(--spacing-3) 0px;
+	}
 }
 
-.left-sction{
+.left-section{
 	flex:1;
 	font-size: var(--paragraph-size);
 	margin-right: var(--spacing-4);
@@ -298,11 +300,13 @@ nav strong{
 .right-section{
 	flex:2;
 }
+
 .multiple-choices{
 	display: flex;
 	flex-wrap: wrap;
 	gap:10px;
 }
+
 .multiple-choices button {
 	border: 1px solid #DA3946;
 	padding: var(--spacing-1) var(--spacing-2);
@@ -341,8 +345,7 @@ ol ol {
 	grid-template-rows: repeat(4, 1fr);
 	gap: 0px;
 	width: 32vw;
-	height: 32vw;
-	margin: 32px auto;
+	margin: 16px auto;
 	margin-top: 144px;
 	justify-content: center;
 }
@@ -356,6 +359,23 @@ ol ol {
     align-items: center;
 	justify-content: center;
 	aspect-ratio: 1 / 1;
+}
+
+#empty {
+	border-right: 0px;
+}
+
+#top-square {
+	border-top: 1px solid #DA3946;
+}
+
+#left-square {
+	border-left: 1px solid #DA3946;
+}
+
+#top-left-square {
+	border-top: 1px solid #DA3946;
+	border-left: 1px solid #DA3946;
 }
 
 /* .square-container {
