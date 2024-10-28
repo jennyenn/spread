@@ -344,25 +344,38 @@ ol ol {
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	gap: 0px;
-	width: 32vw;
+	width: 60vw;
 	margin: 16px auto;
 	margin-top: 144px;
 	justify-content: center;
+}
+
+#info {
 }
 
 .square {
 	background-color: white;
 	border-bottom: 1px solid #DA3946;
 	border-right: 1px solid #DA3946;
-	padding: 16px;
 	display: flex;
     align-items: center;
 	justify-content: center;
 	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	padding: 16px;
 }
 
-#empty {
+#empty1 {
 	border-right: 0px;
+}
+
+#empty2 {
+	border: 0px;
+}
+
+#empty3 {
+	border-right: 1px solid #DA3946;
+	border-bottom: 0px;
 }
 
 #top-square {
@@ -413,106 +426,89 @@ ol ol {
 } */
 
 
-/* need to figure out how to remove line on the top of the "l" in "material""*/
-
-#s-square{ 
-	border-top: 0px solid #DA3946;
-	border-bottom: 0px solid #DA3946;
-	border-right: 1px solid #DA3946;
-}
-
 /* Defining the animations for "WORDS"*/
 
 /* Defining the animation for "W"*/
 
-@keyframes three-step-move {
+@keyframes w-moves {
 	0% {
-	transform: translateY(var(--y--0)) translateX(var(--x--0)); /* Starting point */
+	transform: translateY(0%) translateX(-40%); /* Starting point */
 	}
 	50% {
-		transform: translateY(var(--y--50)) translateX(var(--x--50)); /* Starting point */
+	transform: translateX(-12px); /* Moving to this location */
 	}
 	100% {
-		transform: translateY(var(--y--100)) translateX(var(--x--100)); /* Starting point */
+	transform: translateY(0%) translateX(-40%); /* Ending point */
 	}
 }
-
-.three
 
 #w {
 	transform: translateY(0%) translateX(-40%);
 	clip-path: inset(0); 
-	animation: w-moves 5s ease-in-out infinite;
+	animation: w-moves 5s ease-in-out 12;
 }
 
 /* Defining the animation for "O"*/
 
 @keyframes o-moves {
 	0% {
-	transform: translateY(-60%) translateX(-10%); /* Starting point */
+	transform: translateY(-40%) translateX(0%); /* Starting point */
 	}
 	50% {
-	transform: translateY(0px) translateX(16px); /* Moving to this location */
+	transform: translateY(-16px); /* Moving to this location */
 	}
 	100% {
-	translateY(-60%) translateX(-10%);; /* Ending point */
+	transform: translateY(-40%) translateX(0%); /* Ending point */
 	}
-}
-
-.animated-square {
-	animation: three-move 5s ease-in-out infinite;
 }
 
 #o {
-	transform: translateY(-60%) translateX(-10%);
+	transform: translateY(-40%) translateX(0%);
 	clip-path: inset(0); 
-
-
-	--y--0: 50%;
-	--x--0: 2312%;
-	--x--50: 50%;
-
-	animation-delay: 1s;
+	animation: o-moves 5s ease-in-out 12;
+	animation-delay: 2s;
 }
 
 /* Defining the animation for "R"*/
 
 @keyframes r1-moves {
 	0% {
-	transform: translateY(-10%) translateX(-80%);; /* Starting point */
+	transform: translateY(-10%) translateX(-80%); /* Starting point */
 	}
 	50% {
 	transform: translateY(-16px); /* Moving to this location */
 	}
 	100% {
-	translateY(-10%) translateX(-80%);; /* Ending point */
+	transform: translateY(-10%) translateX(-80%); /* Ending point */
 	}
 }
 
 #r1 {
 	transform: translateY(-10%) translateX(-80%);
 	clip-path: inset(0); 
-	animation: r1-moves 5s ease-in-out infinite;
+	animation: r1-moves 5s ease-in-out 12;
+	animation-delay: 6s;
 }
 
 /* Defining the animation for "D"*/
 
 @keyframes d-moves {
 0% {
-	transform: translateY(-30%) translateX(-40%); /* Starting point */
+	transform: translateY(-30%) translateX(-65%); /* Starting point */
 	}
 	50% {
-	transform: translateX(16px); /* Moving to this location */
+	transform: translateX(60px); /* Moving to this location */
 	}
 	100% {
-	transform: translateY(-30%) translateX(-40%); /* Ending point */
+	transform: translateY(-30%) translateX(-65%); /* Ending point */
 	}
 }
 
 #d {
-	transform: translateY(-30%) translateX(-40%);
+	transform: translateY(-30%) translateX(-65%);
 	clip-path: inset(10); 
-	animation: d-moves 5s ease-in-out infinite;
+	animation: d-moves 5s ease-in-out 12;
+	animation-delay: 8s;
 }
 
 /* Defining the animation for "S" in "Words"*/
@@ -527,12 +523,13 @@ ol ol {
 	100% {
 	transform: translateY(0%) translateX(-80%); /* Ending point */
 	}
-	}
+}
 	
 #s1 {
 	transform: translateY(0%) translateX(-80%);
 	clip-path: inset(10); 
-	animation: s1-moves 5s ease-in-out infinite;
+	animation: s1-moves 5s ease-in-out 12;
+	animation-delay: 10s;
 }
 
 /* Defining the animations for "AS"*/
