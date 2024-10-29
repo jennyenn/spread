@@ -316,17 +316,30 @@ nav strong{
 
 .accordion{
 	margin: var(--spacing-1);
-	max-width: 144vh;
+	max-width: 112vh;
+	margin: auto;
 }
 
-.summary{
+summary{
 	font-family: var(--blockquote-family);
 	font-size: var(--blockquote-size);
 	font-style: var(--blockquote-style);
 	line-height: var(--blockquote-spacing);
 	color: var(--blockquote-color);
 	margin: var(--spacing-1) var(--spacing-2);
+	padding-bottom: 16px;
 	border-bottom: 1px solid #DA3946;
+	flex: auto;
+	list-style-type: '+';
+}
+
+details[open] > summary {
+	list-style-type: '-';
+  }
+
+summary::marker{
+	color: #DA3946;
+	font-size: 30px;
 }
 
 	/* questions lists */
@@ -341,6 +354,7 @@ nav strong{
 	border: 1px solid #DA3946;
 	padding: var(--spacing-2);
 	list-style-type: none;
+	max-width: 744px;
 }
 
 	/* multiple choices */
