@@ -439,8 +439,7 @@ ol ol {
 	grid-template-rows: repeat(4, 1fr);
 	gap: 0px;
 	margin: 16px auto;
-	/* margin-top: 144px; */
-	justify-content: center;
+	justify-content: left;
 }
 
 .square-1 {
@@ -508,18 +507,53 @@ ol ol {
 	justify-content: left;
 }
 
+/* arrow */
+.arrow-container{
+	display:flex;
+	justify-content: left;
+	align-items:center;
+	padding-left: var(--spacing-2);
+}
+.arrow{
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+
+/* desktop media query */
+/* desktop media query */
+/* desktop media query */
+/* desktop media query */
+/* desktop media query */
 
 
 @media (min-width: 748px) {
 	.square-container { 
 		width: 60vw;
 	}
-	#author-square p {
-		font-size: 12px;
+	.titleandarrow{
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		padding: var(--spacing-3);
 	}
 	
-	}
+}
 
+
+/* Print Media Query (for 816 px) */
+/* Print Media Query (for 816 px) */
+/* Print Media Query (for 816 px) */
+/* Print Media Query (for 816 px) */
+/* Print Media Query (for 816 px) */
+
+
+
+/* animaion */
+/* animaion */
+/* animaion */
+/* animaion */
+/* animaion */
 
 /* Defining the animations for "WORDS"*/
 
