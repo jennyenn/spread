@@ -458,12 +458,6 @@ ol ol {
 	border-bottom: 0px;
 }
 
-#empty4 {
-	border-right: 0px;
-	border-top: 0px;
-	border-bottom: 1px solid #DA3946;
-}
-
 #top-square {
 	border-top: 1px solid #DA3946;
 }
@@ -482,9 +476,10 @@ ol ol {
 }
 
 #author-square {
-	grid-column: span 2;
-	aspect-ratio: 2/1;
+	grid-column: span 4;
+	aspect-ratio: 4/1;
 	border-right: 0px;
+	justify-content: left;
 }
 
 /* Defining the animations for "WORDS"*/
