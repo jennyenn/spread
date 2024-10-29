@@ -309,7 +309,15 @@ nav strong{
 	grid-template-columns: repeat(2, 1fr);
 	gap: 0px;
 	width: auto;
+	}
+ul{
+	grid-column: 2;
 }
+
+blockquote{
+	grid-column: 2;
+}
+
 }
 
 	/* summary */
