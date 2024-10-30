@@ -369,98 +369,17 @@ details[open] summary::after {
 /* sticky */
 /* try to fix the title sticky problems */
 
-.sticky-title1{
+.sticky{
 	position: sticky;
 	top: 16px;
 	z-index: 1;
 }
 
-.sticky-section2{
-	position: relative;
-	z-index: 3;
-	background-color: white;
-}
-
-.sticky-title2{
-	position: sticky;
-	top: 16px;
-	z-index: 4;
-}
-.sticky-section3{
-	position: relative;
-	z-index: 5;
-	background-color: white;
-}
-.sticky-title3{
-	position: sticky;
-	top: 16px;
-	z-index: 6;
-}
-.sticky-section4{
-	position: relative;
-	z-index: 7;
-	background-color: white;
-}
-.sticky-title4{
-	position: sticky;
-	top: 16px;
-	z-index: 8;
-}
-.sticky-section5{
-	position: relative;
-	z-index: 9;
-	background-color: white;
-}
-.sticky-title5{
-	position: sticky;
-	top: 16px;
-	z-index: 10;
-}
-
-.sticky-title6{
-	position: sticky;
-	top: 16px;
-	z-index: 12;
-}
-.sticky-section7{
-	position: relative;
-	z-index: 13;
-	background-color: white;
-}
-.sticky-title7{
-	position: sticky;
-	top: 16px;
-	z-index: 14;
-}
-.sticky-h3-1{
+.sticky-1{
 	position: sticky;
 	top: 140px;
 	z-index: 15;
 }
-.sticky-h3-2{
-	position: sticky;
-	top: 140px;
-	z-index: 16;
-}
-/* .sticky-h3-3-1{
-	position: relative;
-	z-index: 16;
-	background-color: white;
-} */
-.sticky-h3-3{
-	position: sticky;
-	top: 140px;
-	z-index: 18;
-}
-.sticky-h3-4{
-	position: sticky;
-	top: 140px;
-	z-index: 19;
-}
-
-
-
-
 
 	/* title */
 	/* title */
@@ -669,28 +588,9 @@ details[open] summary::after {
 		padding-right: var(--spacing-5);
 	}
 
-	.sticky-h3-1{
+	.sticky-1{
 		position: sticky;
 		top: 112px;
-		z-index: 15;
-	}
-	.sticky-h3-2{
-		position: sticky;
-		top: 112px;
-		z-index: 16;
-	}
-	.sticky-h3-3{
-		position: sticky;
-		top: 112px;
-		z-index: 18;
-	}
-	.sticky-h3-4{
-		position: sticky;
-		top: 112px;
-		z-index: 19;
-	}
-
-	
 }
 
 @media (min-width: 1280px) {
@@ -706,6 +606,13 @@ details[open] summary::after {
 /* Print Media Query (for 816 px) */
 /* Print Media Query (for 816 px) */
 /* Print Media Query (for 816 px) */
+
+@media print{
+	.sticky-title1{
+		position: static;
+	}
+}
+	
 
 
 
