@@ -39,7 +39,7 @@
 
 	/* links */
 	--links-family: "Instrument Sans", sans-serif;
-	--links-size: 1.25rem; 
+	--links-size: 1.125rem; 
 	--links-style: bold;
 	--links-text-decoration: underline;
 
@@ -135,6 +135,10 @@ a {
 	text-decoration: var(--links-text-decoration);
 }
 
+a:hover {
+	color: #DA3946;
+}
+
 blockquote {
 	font-family: var(--blockquote-family);
 	font-size: var(--blockquote-size);
@@ -153,7 +157,7 @@ p {
 	font-style: var(--paragraph-style);
 	margin: 0px var(--spacing-1) var(--spacing-1) var(--spacing-1) ;
 	line-height: var(--paragraph-line-height);
-	max-width: 80ch;
+	max-width: 60ch;
 }
 
 q{
@@ -167,11 +171,14 @@ q{
 }
 
 aside{
-	color: #02010F;
-	font-size: calc(var(--paragraph-size) * .9);
-	margin-top: var(--spacing-2);
-	margin-bottom: var(--spacing-2);
+	color: #7c7c7c;
+	font-size: calc(var(--paragraph-size) * 0.9);
+	font-style: italic;
+	margin: var(--spacing-1) var(--spacing-1) var(--spacing-2)  var(--spacing-1) ;
+	line-height: calc(var(--paragraph-line-height) * 0.9);
 }
+
+
 
 	/* nav bar */
 
@@ -276,9 +283,8 @@ nav {
 	/* summary */
 
 .accordion{
-	margin: var(--spacing-1);
+	margin: var(--spacing-2) var(--spacing-1) var(--spacing-2) var(--spacing-4);
 	max-width: 112vh;
-	margin: auto;
 }
 
 summary{
@@ -294,13 +300,11 @@ summary{
 	list-style-type: '+';
 }
 
-details[open] > summary {
-	list-style-type: '-';
-  }
-
-summary::marker{
-	color: #DA3946;
-	font-size: 30px;
+summary::after {
+    content: " +";
+}
+details[open] summary::after {
+    content: " -";
 }
 
 	/* questions lists */
@@ -472,10 +476,15 @@ ol ol {
 
 @media (min-width: 744px) {
 
+	nav {
+		padding: var(--spacing-2) var(--spacing-4) var(--spacing-1)  var(--spacing-4);
+		color: black;
+		width: 100%;
+		z-index: 1000;
+	}
+
 	h1 {
         font-size: calc(var(--h1-size) * 1.5);}
-	nav{
-		flex-direction: row;}
 
 	.square-container { 
 		width: 60vw;
@@ -488,16 +497,24 @@ ol ol {
 	}
 
 	h2 {
-		padding-left: var(--spacing-3);
-	}
-	blockquote{
-		margin: var(--spacing-3) var(--spacing-3);
+		padding-left: var(--spacing-4);
 	}
 
 	/* media queries for body text */
 
+	aside{
+		font-style: italic;
+		margin: var(--spacing-5) var(--spacing-4) var(--spacing-3)  var(--spacing-4) ;
+		line-height: calc(var(--paragraph-line-height) * 0.9);
+		max-width: 70ch;
+	}
+
 	p{
-		margin: 0px var(--spacing-3) var(--spacing-1) var(--spacing-3) ;
+		margin: 0px var(--spacing-4) var(--spacing-1) var(--spacing-4) ;
+	}
+
+	blockquote{
+		margin: 0px var(--spacing-4) var(--spacing-2) 0px;
 	}
 
 	.two-column {
@@ -514,6 +531,7 @@ ol ol {
 	.number-container {
 		width: 120px;
 		height: 120px;
+		margin-left: var(--spacing-4);
 	}
 
 	.choices-container{
