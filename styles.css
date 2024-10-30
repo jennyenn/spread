@@ -592,6 +592,7 @@ details[open] summary::after {
 		position: sticky;
 		top: 112px;
 }
+}
 
 @media (min-width: 1280px) {
     h1 {
