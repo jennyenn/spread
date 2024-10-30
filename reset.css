@@ -32,7 +32,7 @@ img {
 table { border-collapse: collapse }
 
 /* Safari issue when using text input. */
-input, textarea { user-select: auto }
+input, textarea { -webkit-user-select: auto }
 
 /* Revert for textarea elements on Safari. */
 textarea { white-space: revert }
@@ -52,9 +52,9 @@ meter {
 /* Revert for bug in Chromium browsers. */
 :where([contenteditable]:not([contenteditable="false"])) {
 	-moz-user-modify: read-write;
-	line-break: after-white-space;
+	-webkit-line-break: after-white-space;
 	-webkit-user-modify: read-write;
-	user-select: auto;
+	-webkit-user-select: auto;
 	overflow-wrap: break-word;
 }
 
