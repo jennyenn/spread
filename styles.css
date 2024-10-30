@@ -367,80 +367,95 @@ details[open] summary::after {
 /* sticky */
 /* sticky */
 /* sticky */
-
-.sticky{
-	position: sticky;
-	top: 16px;
-	z-index: 1;
-}
-
 /* try to fix the title sticky problems */
 
-.title2{
+.sticky-title1{
 	position: sticky;
 	top: 16px;
 	z-index: 1;
 }
-.section3{
+
+.sticky-section2{
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	background-color: white;
 }
-.title3{
-	position: sticky;
-	top: 16px;
-	z-index: 3;
-}
-.title4{
+
+.sticky-title2{
 	position: sticky;
 	top: 16px;
 	z-index: 4;
 }
-.section5{
+.sticky-section3{
 	position: relative;
 	z-index: 5;
 	background-color: white;
 }
-.title5{
+.sticky-title3{
 	position: sticky;
 	top: 16px;
 	z-index: 6;
 }
-
-.title6{
-	position: sticky;
-	top: 16px;
-	z-index: 7;
-}
-.section7{
+.sticky-section4{
 	position: relative;
-	z-index: 8;
+	z-index: 7;
 	background-color: white;
 }
-.title7{
+.sticky-title4{
 	position: sticky;
 	top: 16px;
-	z-index: 9;
+	z-index: 8;
 }
-.h37-1{
+.sticky-section5{
+	position: relative;
+	z-index: 9;
+	background-color: white;
+}
+.sticky-title5{
 	position: sticky;
-	top: 112px;
+	top: 16px;
 	z-index: 10;
 }
-.h37-2{
+
+.sticky-title6{
 	position: sticky;
-	top: 112px;
-	z-index: 11;
-}
-.h37-3{
-	position: sticky;
-	top: 112px;
+	top: 16px;
 	z-index: 12;
 }
-.h37-4{
-	position: sticky;
-	top: 112px;
+.sticky-section7{
+	position: relative;
 	z-index: 13;
+	background-color: white;
+}
+.sticky-title7{
+	position: sticky;
+	top: 16px;
+	z-index: 14;
+}
+.sticky-h3-1{
+	position: sticky;
+	top: 140px;
+	z-index: 15;
+}
+.sticky-h3-2{
+	position: sticky;
+	top: 140px;
+	z-index: 16;
+}
+/* .sticky-h3-3-1{
+	position: relative;
+	z-index: 16;
+	background-color: white;
+} */
+.sticky-h3-3{
+	position: sticky;
+	top: 140px;
+	z-index: 18;
+}
+.sticky-h3-4{
+	position: sticky;
+	top: 140px;
+	z-index: 19;
 }
 
 
@@ -654,25 +669,25 @@ details[open] summary::after {
 		padding-right: var(--spacing-5);
 	}
 
-	.h37-1{
+	.sticky-h3-1{
 		position: sticky;
-		top: 120px;
-		z-index: 10;
+		top: 112px;
+		z-index: 15;
 	}
-	.h37-2{
+	.sticky-h3-2{
 		position: sticky;
-		top: 120px;
-		z-index: 11;
+		top: 112px;
+		z-index: 16;
 	}
-	.h37-3{
+	.sticky-h3-3{
 		position: sticky;
-		top: 120px;
-		z-index: 12;
+		top: 112px;
+		z-index: 18;
 	}
-	.h37-4{
+	.sticky-h3-4{
 		position: sticky;
-		top: 120px;
-		z-index: 13;
+		top: 112px;
+		z-index: 19;
 	}
 
 	
