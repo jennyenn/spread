@@ -13,13 +13,13 @@
 
 	/* h2 */
 	--h2-family: "Instrument Sans", sans-serif;
-	--h2-size: calc(var(--h1-size) / 2.1); 
+	--h2-size: calc(var(--h1-size) / 2); 
 	--h2-style: medium;
 	--h2-border:1px solid #DA3946;
 
 	/* h3 */
 	--h3-family: "Instrument Sans", sans-serif;
-	--h3-size: calc(var(--h1-size) / 2.8); 
+	--h3-size: calc(var(--h1-size) / 2.5); 
 	--h3-style: medium;
 
 	/* paragraph  */
@@ -83,13 +83,11 @@ h2 {
 	font-family: var(--h2-family);
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
-	margin-bottom: 0px 0px;
 	padding: var(--spacing-2) var(--spacing-1);
 	background-color: white;
 	border-top: var(--h2-border);
 	border-bottom: var(--h2-border);
 	width: 100%;
-	display: flex;
 	z-index: 2;
 }
 
@@ -97,9 +95,8 @@ h3 {
 	font-family: var(--h3-family);
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
-	margin: var(--spacing-4) var(--spacing-2) 0px 0px;
+	margin: var(--spacing-4) var(--spacing-1);
 	background-color: #DA3946;
-	width: 100%;
 	color: white;
 	padding: var(--spacing-1);
 }
@@ -167,7 +164,7 @@ aside{
 	line-height: calc(var(--paragraph-line-height) * 0.9);
 }
 
-aside:first-of-type {
+.introduction{
 	margin: var(--spacing-3) var(--spacing-4) var(--spacing-3)  var(--spacing-5) ;
 	border: 1px solid #7c7c7c;
 	padding: 1rem;
@@ -180,6 +177,12 @@ li{
 	padding:var(--list-spacing);
 }
 
+hr{
+	border: 0.5px solid #7c7c7c;
+	border-style: dashed;
+	border-image: 2;
+	margin: var(--spacing-2)var(--spacing-1) ;
+}
 
 	/* nav bar */
 
@@ -256,12 +259,12 @@ nav {
 	padding: 8px;
 	border: 1px solid #DA3946;
 	width: 80px;
-	height: auto;
 	align-items: center;
 	justify-content: center;
 	color: #DA3946;
 	font-weight: 600;
 	overflow: hidden;
+	aspect-ratio: 1 / 1;
 }
 
 @keyframes number-moves {
@@ -287,6 +290,7 @@ nav {
 
 .number-h2{
 	display: flex;
+	align-items: stretch;
 }
 
 	/* summary */
@@ -515,6 +519,8 @@ ol ol {
 
 	h2 {
 		padding-left: var(--spacing-4);
+		margin-right: var(--spacing-5);
+		border-right: 1px solid #DA3946;
 	}
 
 	/* media queries for body text */
@@ -524,7 +530,7 @@ ol ol {
 		max-width: 60ch;
 	}
 
-	aside:first-of-type {
+	.introduction{
 		margin: var(--spacing-5) var(--spacing-4) var(--spacing-3)  var(--spacing-5) ;
 		border: 1px solid #7c7c7c;
 		padding: 1rem;
@@ -554,7 +560,6 @@ ol ol {
 	.number-container {
 		font-size: 4rem;
 		width: 120px;
-		height: 120px;
 		margin-left: var(--spacing-4);
 	}
 
