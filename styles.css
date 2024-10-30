@@ -258,6 +258,11 @@ nav {
 	z-index: 1;
 }
 
+/* .titleandarrow {
+	height: 85vh;
+	width: 100vw;
+} */
+
 @keyframes number-moves {
 0% {
 	transform: translateY(0%) translateX(-7%); /* Starting point */
@@ -394,7 +399,9 @@ details[open] summary::after {
 	gap: 0px;
 	margin: 16px auto;
 	justify-content: left;
+	
 }
+
 
 div.square-container > div {
 	background-color: white;
