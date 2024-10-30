@@ -587,13 +587,13 @@ details[open] summary::after {
 	}
 
 	h2 {
-		margin-right: var(--spacing-5);
+		margin-right: var(--spacing-4);
 		border-right: 1px solid #DA3946;
 		padding: var(--spacing-2) var(--spacing-4);
 	}
 	h3{
-		margin-left: var(--spacing-5);
-		margin-right: var(--spacing-5);
+		margin-left: var(--spacing-4);
+		margin-right: var(--spacing-4);
 	}
 
 	/* media queries for body text */
@@ -659,6 +659,27 @@ details[open] summary::after {
 
 	.right-section{
 		padding-right: var(--spacing-5);
+	}
+
+	.h37-1{
+		position: sticky;
+		top: 120px;
+		z-index: 10;
+	}
+	.h37-2{
+		position: sticky;
+		top: 120px;
+		z-index: 11;
+	}
+	.h37-3{
+		position: sticky;
+		top: 120px;
+		z-index: 12;
+	}
+	.h37-4{
+		position: sticky;
+		top: 120px;
+		z-index: 13;
 	}
 }
 
