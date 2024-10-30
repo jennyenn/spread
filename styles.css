@@ -13,13 +13,13 @@
 
 	/* h2 */
 	--h2-family: "Instrument Sans", sans-serif;
-	--h2-size: calc(var(--h1-size) / 2); 
+	--h2-size: calc(var(--h1-size) / 2.2); 
 	--h2-style: medium;
 	--h2-border:1px solid #DA3946;
 
 	/* h3 */
 	--h3-family: "Instrument Sans", sans-serif;
-	--h3-size: calc(var(--h1-size) / 2.5); 
+	--h3-size: calc(var(--h1-size) / 3); 
 	--h3-style: medium;
 
 	/* paragraph  */
@@ -64,10 +64,11 @@
 	/* heading styles */
 
 header{
-	/* position: fixed; */
+	position: sticky;
 	top: 0;
 	width: 100%; 
-	z-index: 1000; 
+	background-color: white;
+	z-index: 1;
 }
 
 h1 {
@@ -83,19 +84,18 @@ h2 {
 	font-family: var(--h2-family);
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
-	padding: var(--spacing-2) var(--spacing-1);
+	padding: var(--spacing-2) var(--spacing-2);
 	background-color: white;
 	border-top: var(--h2-border);
 	border-bottom: var(--h2-border);
 	width: 100%;
-	z-index: 2;
 }
 
 h3 {
 	font-family: var(--h3-family);
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
-	margin: var(--spacing-4) var(--spacing-1);
+	margin: var(--spacing-4) 0px;
 	background-color: #DA3946;
 	color: white;
 	padding: var(--spacing-1);
@@ -110,8 +110,8 @@ body{
 	
 
 section {
-	margin-top: var(--spacing-3);
-	margin-bottom: var(--spacing-3);
+	padding-top: var(--spacing-3);
+	padding-bottom: var(--spacing-3);
 }
 
 a {
@@ -194,7 +194,6 @@ nav {
 	padding: var(--spacing-2) var(--spacing-2) var(--spacing-1)  var(--spacing-2);
 	color: black;
 	width: 100%;
-	z-index: 1000;
 }
 
 .nav-left {
@@ -234,16 +233,6 @@ nav {
 	text-decoration: none;
 }
 
-.sticky{
-	position: sticky;
-	top: 0px
-}
-
-.sticky-2{
-	position: sticky;
-	top: 100px;
-}
-
 	/* chapter */
 
 .chapter{
@@ -265,6 +254,8 @@ nav {
 	font-weight: 600;
 	overflow: hidden;
 	aspect-ratio: 1 / 1;
+	background-color: white;
+	z-index: 1;
 }
 
 @keyframes number-moves {
@@ -373,15 +364,91 @@ details[open] summary::after {
 	color: white;
 }
 
-	/* flexblox(should be added into class later) */
-/* ol {
-	display: flex;
-	flex-wrap: nowrap;
+/* sticky */
+/* sticky */
+/* sticky */
+
+.sticky{
+	position: sticky;
+	top: 16px;
+	z-index: 1;
 }
 
-ol ol {
-	flex-direction: column;
-} */
+.sticky-2{
+	position: sticky;
+	top: 120px;
+}
+
+/* try to fix the title sticky problems */
+
+.title2{
+	position: sticky;
+	top: 16px;
+	z-index: 1;
+}
+.section3{
+	position: relative;
+	z-index: 2;
+	background-color: white;
+}
+.title3{
+	position: sticky;
+	top: 16px;
+	z-index: 3;
+}
+.title4{
+	position: sticky;
+	top: 16px;
+	z-index: 4;
+}
+.section5{
+	position: relative;
+	z-index: 5;
+	background-color: white;
+}
+.title5{
+	position: sticky;
+	top: 16px;
+	z-index: 6;
+}
+
+
+
+.title6{
+	position: sticky;
+	top: 16px;
+	z-index: 7;
+}
+.section7{
+	position: relative;
+	z-index: 8;
+	background-color: white;
+}
+.title7{
+	position: sticky;
+	top: 16px;
+	z-index: 9;
+}
+.h37-1{
+	position: sticky;
+	top: 112px;
+	z-index: 10;
+}
+.h37-2{
+	position: sticky;
+	top: 112px;
+	z-index: 11;
+}
+.h37-3{
+	position: sticky;
+	top: 112px;
+	z-index: 12;
+}
+.h37-4{
+	position: sticky;
+	top: 112px;
+	z-index: 13;
+}
 
 
 
@@ -520,9 +587,9 @@ ol ol {
 	}
 
 	h2 {
-		padding-left: var(--spacing-4);
 		margin-right: var(--spacing-5);
 		border-right: 1px solid #DA3946;
+		padding: var(--spacing-2) var(--spacing-4);
 	}
 	h3{
 		margin-left: var(--spacing-5);
