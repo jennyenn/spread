@@ -160,12 +160,12 @@ aside{
 	color: #7c7c7c;
 	font-size: calc(var(--paragraph-size) * 0.9);
 	font-style: italic;
-	margin: var(--spacing-1) var(--spacing-1) var(--spacing-2)  var(--spacing-1) ;
+	margin: var(--spacing-1) var(--spacing-2)  var(--spacing-1) ;
 	line-height: calc(var(--paragraph-line-height) * 0.9);
 }
 
 .introduction{
-	margin: var(--spacing-3) var(--spacing-4) var(--spacing-3)  var(--spacing-5) ;
+	margin: -25px var(--spacing-4) var(--spacing-3)  var(--spacing-5) ;
 	border: 1px solid #7c7c7c;
 	padding: 1rem;
 }
@@ -681,6 +681,8 @@ details[open] summary::after {
 		top: 120px;
 		z-index: 13;
 	}
+
+	
 }
 
 @media (min-width: 1280px) {
