@@ -374,11 +374,6 @@ details[open] summary::after {
 	z-index: 1;
 }
 
-.sticky-2{
-	position: sticky;
-	top: 120px;
-}
-
 /* try to fix the title sticky problems */
 
 .title2{
@@ -411,8 +406,6 @@ details[open] summary::after {
 	top: 16px;
 	z-index: 6;
 }
-
-
 
 .title6{
 	position: sticky;
