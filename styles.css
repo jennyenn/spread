@@ -258,6 +258,11 @@ nav {
 	z-index: 1;
 }
 
+/* .titleandarrow {
+	height: 85vh;
+	width: 100vw;
+} */
+
 @keyframes number-moves {
 0% {
 	transform: translateY(0%) translateX(-7%); /* Starting point */
@@ -394,51 +399,34 @@ details[open] summary::after {
 	gap: 0px;
 	margin: 16px auto;
 	justify-content: left;
+	
+}
+
+div.square-container > div {
+	background-color: white;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	padding: 16px;
 }
 
 .square-1 {
-	background-color: white;
 	border: 1px solid #DA3946;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	aspect-ratio: 1 / 1;
-	overflow: hidden;
-	padding: 16px;
 }
 .square-2 {
-	background-color: white;
 	border: 1px solid #DA3946;
 	border-left: 0px;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	aspect-ratio: 1 / 1;
-	overflow: hidden;
-	padding: 16px;
 }
 .square-3 {
-	background-color: white;
 	border: 1px solid #DA3946;
 	border-left: 0px;
 	border-top: 0px;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	aspect-ratio: 1 / 1;
-	overflow: hidden;
-	padding: 16px;
 }
 .square-4 {
-	background-color: white;
 	border: 1px solid #DA3946;
 	border-top: 0px;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	aspect-ratio: 1 / 1;
-	overflow: hidden;
-	padding: 16px;
 }
 
 .empty-right{
@@ -599,7 +587,6 @@ details[open] summary::after {
         font-size: calc(var(--h1-size) * 2);
     }
 }
-
 
 
 /* Print Media Query (for 816 px) */
