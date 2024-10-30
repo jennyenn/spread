@@ -5,7 +5,7 @@
 
 	/* h1 */
 	--h1-family: "Instrument Sans", sans-serif;
-	--h1-size: 4rem; 
+	--h1-size: 3.5rem; 
 	--h1-style: medium;
 	--h1-spacing: 2rem;
 	--h1-text-transform: uppercase;
@@ -13,13 +13,13 @@
 
 	/* h2 */
 	--h2-family: "Instrument Sans", sans-serif;
-	--h2-size: calc(var(--h1-size) / 2); 
+	--h2-size: calc(var(--h1-size) / 2.1); 
 	--h2-style: medium;
 	--h2-border:1px solid #DA3946;
 
 	/* h3 */
 	--h3-family: "Instrument Sans", sans-serif;
-	--h3-size: calc(var(--h1-size) / 2.5); 
+	--h3-size: calc(var(--h1-size) / 2.8); 
 	--h3-style: medium;
 
 	/* paragraph  */
@@ -45,7 +45,7 @@
 
 	/* list */
 	--list-family: "Instrument Sans", sans-serif;
-	--list-size: 1.25rem;
+	--list-size: 1.125rem;
 	--list-style: bold;
 	--list-spacing: 2rem;	
 
@@ -84,7 +84,7 @@ h2 {
 	font-size: var(--h2-size);
 	font-style: var(--h2-style);
 	margin-bottom: 0px 0px;
-	padding: var(--spacing-2) var(--spacing-2);
+	padding: var(--spacing-2) var(--spacing-1);
 	background-color: white;
 	border-top: var(--h2-border);
 	border-bottom: var(--h2-border);
@@ -118,15 +118,6 @@ section {
 	margin-bottom: var(--spacing-3);
 }
 
-li {
-	font-family: var(--list-family);
-	font-size: var(--list-size);
-	font-style: var(--list-style);
-	line-height: var(--list-spacing);
-	text-decoration: var(--list-text-decoration);
-	margin: 0px var(--spacing-2);
-}
-
 a {
 	font-family: var(--links-family);
 	font-size: var(--links-size);
@@ -145,10 +136,9 @@ blockquote {
 	font-style: var(--blockquote-style);
 	line-height: var(--blockquote-spacing);
 	color: var(--blockquote-color);
-	margin: var(--spacing-3) var(--spacing-1) ;
+	margin: var(--spacing-2) var(--spacing-1) ;
 	border-left: var(--blockquote-border-left);
 	padding-left: var(--blockquote-padding-left);
-	list-style-type: none;
 }
 
 p {
@@ -178,6 +168,12 @@ aside{
 	line-height: calc(var(--paragraph-line-height) * 0.9);
 }
 
+li{
+	font-family: var(--list-family);
+	font-size: var(--list-size);
+	font-style: var(--list-style);
+	padding:var(--list-spacing);
+}
 
 
 	/* nav bar */
@@ -209,20 +205,25 @@ nav {
 .menu{
 	display: none;
 	background-color: white;
-	border: 1px solid #DA3946;
 	margin-bottom: var(--spacing-3);
+	color: black;
+	padding-bottom: 2rem;
 }
 
 .menu.active {
 	display: block;
+	border-top: 1px solid #DA3946;
+	border-bottom: 1px solid #DA3946;
 }
 
 .menu li{
-	padding: 10px 0px;
+	padding-bottom: 0px;
+}
+.menu li:hover {
+	color:#DA3946;
 }
 
-.menu li a{
-	color:black;
+.menu a{
 	text-decoration: none;
 }
 
@@ -311,14 +312,13 @@ details[open] summary::after {
 
 .questions_list{
 	font-family: var(--blockquote-family);
-	font-size: 48px;
+	font-size: var(--blockquote-size);
 	font-style: var(--blockquote-style);
 	line-height: var(--blockquote-spacing);
 	color: var(--blockquote-color);
-	margin: var(--spacing-1) var(--spacing-2);
+	margin: var(--spacing-2) var(--spacing-1);
 	border: 1px solid #DA3946;
 	padding: var(--spacing-2);
-	list-style-type: none;
 	max-width: 744px;
 }
 
@@ -336,7 +336,8 @@ details[open] summary::after {
 	display: flex;
 	flex-wrap: wrap;
 	gap:10px;
-	margin-top: var(--spacing-3);
+	margin-top: var(--spacing-2);
+	margin-bottom: var(--spacing-2);
 	padding-left: var(--spacing-2);
 	padding-right: var(--spacing-2);
 }
@@ -484,7 +485,11 @@ ol ol {
 	}
 
 	h1 {
-        font-size: calc(var(--h1-size) * 1.5);}
+        font-size: calc(var(--h1-size) * 1.5);
+	}
+	h2{
+		font-size: calc(var(--h2-size)*1.5);
+	}
 
 	.square-container { 
 		width: 60vw;
