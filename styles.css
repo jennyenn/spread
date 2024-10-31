@@ -975,6 +975,7 @@ div.square-container > div {
 	font-size: calc(var(--h1-size) / 2.2);
 	font-style: var(--h1-style);
 	margin: 0px;
+	padding-right: 16px;
 }
 
 /* Footer animation */
