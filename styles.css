@@ -585,6 +585,9 @@ div.square-container > div {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 0px;
 	}
+	.right-footer{
+		padding: 48px;
+	}
 }
 
 @media (min-width: 1280px) {
@@ -959,16 +962,17 @@ div.square-container > div {
 .right-footer{
 	background-color: white;
 	border: 1px solid #DA3946;
-	padding: 32px;
+	padding: 16px;
 	padding-bottom: 64px;
 	display: flex;
     align-items: center;
+	justify-content: center;
 	overflow: hidden;
 }
 
 #footer-author-1, #footer-author-2, #footer-author-3{
 	font-family: var(--h3-family);
-	font-size: calc(var(--h1-size) / 2);
+	font-size: calc(var(--h1-size) / 2.2);
 	font-style: var(--h1-style);
 	margin: 0px;
 }
