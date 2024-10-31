@@ -579,7 +579,12 @@ div.square-container > div {
 	.sticky-1{
 		position: sticky;
 		top: 112px;
-}
+	}
+	footer{
+		display: grid; 
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0px;
+	}
 }
 
 @media (min-width: 1280px) {
@@ -601,8 +606,6 @@ div.square-container > div {
 	}
 }
 	
-
-
 
 /* animaion */
 /* animaion */
@@ -930,9 +933,98 @@ div.square-container > div {
 	animation-delay: 15s;
 }
 
-footer{
-	display:flex;
+/* Footer */
+
+.left-footer{
+	padding: 32px;
+	padding-bottom: 64px;
+	gap: 24px;
 	background-color: #DA3946;
 	color:white;
-	padding: var(--spacing-1);
+}
+
+#footer-title{
+	font-family: var(--h3-family);
+	font-size: calc(var(--h3-size) * 2);
+	padding: 0px;
+	margin: 0;
+	font-style: var(--h3-style);
+	color: white;
+}
+
+#footer-description{
+	margin: 0px;
+}
+
+.right-footer{
+	background-color: white;
+	border: 1px solid #DA3946;
+	padding: 32px;
+	padding-bottom: 64px;
+	display: flex;
+    align-items: center;
+	overflow: hidden;
+}
+
+#footer-author-1, #footer-author-2, #footer-author-3{
+	font-family: var(--h3-family);
+	font-size: calc(var(--h1-size) / 2);
+	font-style: var(--h1-style);
+	margin: 0px;
+}
+
+/* Footer animation */
+
+@keyframes footer-author-moves-1 {
+	0% {
+	transform: translateY(100%) translateX(0%); /* Starting point */
+	}
+	50% {
+	transform: translateY(-100%) translateX(0%); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(100%) translateX(0%); /* Ending point */
+	}
+}
+
+#footer-author-1 {
+	transform: translateY(100%) translateX(0%);
+	clip-path: inset(0); 
+	animation: footer-author-moves-1 5s ease-in-out infinite;
+}
+
+@keyframes footer-author-moves-2 {
+	0% {
+	transform: translateY(100%) translateX(0%); /* Starting point */
+	}
+	50% {
+	transform: translateY(-100%) translateX(0%); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(100%) translateX(0%); /* Ending point */
+	}
+}
+
+#footer-author-2 {
+	transform: translateY(100%) translateX(0%);
+	clip-path: inset(0); 
+	animation: footer-author-moves-2 10s ease-in-out infinite;
+}
+
+@keyframes footer-author-moves-3 {
+	0% {
+	transform: translateY(100%) translateX(0%); /* Starting point */
+	}
+	50% {
+	transform: translateY(-100%) translateX(0%); /* Moving to this location */
+	}
+	100% {
+	transform: translateY(100%) translateX(0%); /* Ending point */
+	}
+}
+
+#footer-author-3 {
+	transform: translateY(100%) translateX(0%);
+	clip-path: inset(0); 
+	animation: footer-author-moves-3 7s ease-in-out infinite;
 }
