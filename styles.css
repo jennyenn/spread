@@ -753,10 +753,19 @@ div.square-container > div {
 	summary{
 		color: #02010F;
 		border-color: #02010F;
+		font-size: calc(var(--blockquote-size)*.8);
+	}
+
+	p{
+		font-size: calc(var(--paragraph-size)*.75);
+		line-height: calc(var(--paragraph-line-height)*.75);
+		color: #02010F;
 	}
 
 	a{
 		color: #02010F;
+		font-size: calc(var(--links-size)*.75);
+		line-height: calc(var(--paragraph-line-height)*.75);
 	}
 
 	.multiple-choices{
@@ -765,21 +774,35 @@ div.square-container > div {
 	}
 
 	blockquote{
-		margin-bottom: var(--spacing-3);
 		color: black;
 		border-color: black;
+		font-size: calc(var(--blockquote-size)*.8);
+		line-height: calc(var(--blockquote-spacing)*.8);
+	}
+
+	.two-column{
+		margin-bottom: var(--spacing-2);
+	}
+
+	aside{
+		font-size: calc(var(--paragraph-size) * 0.75);
+		line-height: calc(var(--paragraph-line-height)*.75);
 	}
 
 	q{
+		font-size: calc(var(--blockquote-size)*.8);
+		line-height: calc(var(--blockquote-spacing)*.8);
 		margin-bottom: var(--spacing-2);
 		color: black;
 	}
+
 	.number-container{
 		border-color: black;
 	}
 
 	strong{
-		
+		color: #02010F;
+		background-color: white;
 	}
 
 	.sticky{
@@ -813,12 +836,20 @@ div.square-container > div {
 	.questions_list{
 		color: #02010F;
 		border-color: #02010F;
-		margin-bottom: var(--spacing-3);
+		/* margin-bottom: var(--spacing-3); */
+		font-size: calc(var(--blockquote-size)*.7);
+		padding: var(--spacing-1);
+	}
+
+	.questions_list > div:not(:first-child) {
+		padding-top: 0px;
 	}
 
 	.multiple-choices button {
 		color: #02010F;
 		border-color: #02010F;
+		font-size: calc(var(--paragraph-size)*.75);
+		
 	}
 
 	#footer-author-1, #footer-author-2{
@@ -846,12 +877,11 @@ div.square-container > div {
 
 	.right-footer{
 		margin-top: var(--spacing-2);
-		border-color: #02010F;
-		border: 1px solid #02010F;
+		border: 1px solid #02010F !important;
 	}
 
 	.goodbye{
-		color: #02010F;
+		color: #02010F !important;
 	}
 }
 	
