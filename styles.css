@@ -95,7 +95,7 @@ h3 {
 	font-family: var(--h3-family);
 	font-size: var(--h3-size);
 	font-style: var(--h3-style);
-	margin: var(--spacing-4) 0px;
+	margin: var(--spacing-2) 0px;
 	background-color: #DA3946;
 	color: white;
 	padding: var(--spacing-1);
@@ -110,8 +110,8 @@ body{
 	
 
 section {
-	padding-top: var(--spacing-3);
-	padding-bottom: var(--spacing-3);
+	padding-top: var(--spacing-2);
+	padding-bottom: var(--spacing-2);
 }
 
 a {
@@ -160,7 +160,7 @@ aside{
 	color: #7c7c7c;
 	font-size: calc(var(--paragraph-size) * 0.9);
 	font-style: italic;
-	margin: var(--spacing-1) var(--spacing-2)  var(--spacing-1) ;
+	margin: var(--spacing-1) var(--spacing-2);
 	line-height: calc(var(--paragraph-line-height) * 0.9);
 }
 
@@ -536,6 +536,9 @@ div.square-container > div {
 		gap: 0px;
 		width: auto;
 	}
+
+	p{
+		grid-column: 2;}
 	ul{
 		grid-column: 2;}
 
@@ -703,9 +706,38 @@ div.square-container > div {
 
 @media print{
 
-	/* @page{
-	margin-top: .5in;
-	} */
+	@page{
+	margin: 20mm;
+	}
+
+	header{
+		position: static;
+		}
+
+	h3{
+		color: #DA3946;
+		font-size: var(--h2-size);
+		border: 1px solid #DA3946;
+		padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	section {
+		padding-bottom: var(--spacing-1);
+	}
+
+	blockquote{
+		margin-bottom: var(--spacing-2);
+	}
+
+	q{
+		margin-bottom: var(--spacing-2);
+	}
+
+	h3{
+		margin: var(--spacing-2) var(--spacing-5);
+	}
 
 	.sticky{
 		position: static;
@@ -713,41 +745,12 @@ div.square-container > div {
 
 	.sticky-1{
 		position: static;
-		padding: 0px;
-		margin: 32px 0px;
-		border: 1px solid #DA3946;
-		color: #DA3946;
-		font-size: var(--h2-size);
 	}
 
 	.number-h2{
 		display: flex;
 		justify-content: center;
 		border-right: 1px solid #DA3946;
-	}
-
-	body {
-    	padding: 10px; 
-		padding-top: 10px;
-		margin-top: 20px;
-  	}
-
-	footer{
-		page-break-after: always;
-	}
-
-	.left-footer{
-		display: none;
-	}
-
-	section {
-		padding-top: 0px;
-		padding-bottom: 0px;
-	}
-
-	h3{
-		color: #DA3946;
-		font-size: var(--h2-size);
 	}
 
 	.number-animation{	
@@ -763,8 +766,12 @@ div.square-container > div {
 		font-size: 48px;
 	}
 	
-	header{
-	position: static;
+	footer{
+		page-break-after: always;
+	}
+
+	.left-footer{
+		display: none;
 	}	
 }
 	
