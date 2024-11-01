@@ -185,6 +185,11 @@ hr{
 	margin: var(--spacing-2)var(--spacing-1) ;
 }
 
+strong {
+	background-color: #DA3946;
+	color: white;
+}
+
 	/* nav bar */
 
 nav {
@@ -325,6 +330,10 @@ details[open] summary::after {
 	border: 1px solid #DA3946;
 	padding: var(--spacing-2);
 	max-width: 744px;
+}
+
+.questions_list > div:not(:first-child){
+	padding-top: calc(var(--spacing-1)/1.1);
 }
 
 .left-section{
