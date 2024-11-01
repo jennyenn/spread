@@ -863,11 +863,14 @@ div.square-container > div {
 	}
 
 	#footer-author-1{
-		padding-top: -40px;
+		padding-bottom: 112px;
+		/* flex: auto;
+		position: relative; */
 	}
 
 	#footer-author-2{
-		padding-top: 100px;
+		padding-top: 144px;
+		padding-left: 16px;
 	}
 
 	.left-footer{
@@ -876,8 +879,9 @@ div.square-container > div {
 	}	
 
 	.right-footer{
-		margin-top: var(--spacing-2);
 		border: 1px solid #02010F !important;
+		padding-bottom: 0px !important;
+		padding-top: 0px !important;
 	}
 
 	.goodbye{
@@ -1253,7 +1257,7 @@ div.square-container > div {
 	overflow: hidden;
 }
 
-#footer-author-1, #footer-author-2, #footer-author-3{
+#footer-author-1, #footer-author-2{
 	font-family: var(--h3-family);
 	font-size: var(--h1-size);
 	font-style: var(--h1-style);
