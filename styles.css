@@ -692,7 +692,7 @@ div.square-container > div {
 		padding-left: var(--spacing-1);
 	}
 
-	#footer-author-1, #footer-author-2, #footer-author-3{
+	#footer-author-1, #footer-author-2{
 		font-size: calc(var(--h1-size) * 1.4);
 	}
 }
@@ -706,6 +706,10 @@ div.square-container > div {
 
 @media print{
 
+	* {
+        color: black;
+    }
+
 	@page{
 	margin: 20mm;
 	}
@@ -714,29 +718,39 @@ div.square-container > div {
 		position: static;
 		}
 
+	h2{
+		color: black;
+	}
 	h3{
-		color: #DA3946;
+		color: black;
 		font-size: var(--h2-size);
-		border: 1px solid #DA3946;
+		border: 1px solid black;
 		padding: 10px;
 		margin-top: 10px;
-		margin-bottom: 10px;
+		margin: 0px var(--spacing-1);
 	}
 
 	section {
 		padding-bottom: var(--spacing-1);
 	}
 
+	.multiple-choices{
+		color: black;
+		border-color: black;
+	}
+
 	blockquote{
 		margin-bottom: var(--spacing-2);
+		color: black;
+		border-color: black;
 	}
 
 	q{
 		margin-bottom: var(--spacing-2);
+		color: black;
 	}
-
-	h3{
-		margin: var(--spacing-2) var(--spacing-5);
+	.number-container{
+		border-color: black;
 	}
 
 	.sticky{
@@ -750,7 +764,8 @@ div.square-container > div {
 	.number-h2{
 		display: flex;
 		justify-content: center;
-		border-right: 1px solid #DA3946;
+		border-right: 1px solid black;
+		margin: 0px var(--spacing-1);
 	}
 
 	.number-animation{	
@@ -765,14 +780,26 @@ div.square-container > div {
 		margin: 0px;
 		font-size: 48px;
 	}
-	
-	footer{
-		page-break-after: always;
+
+	#footer-author-1, #footer-author-2{
+		transform: none !important;
+		animation: none !important;
+		transition: none !important;
+	}
+
+	#footer-author-1{
+		padding-top: -40px;
+	}
+	#footer-author-2{
+		padding-top: 100px;
 	}
 
 	.left-footer{
 		display: none;
 	}	
+	.right-footer{
+		margin-top: var(--spacing-2);
+	}
 }
 	
 
@@ -1152,7 +1179,7 @@ div.square-container > div {
 	text-align: center;
 }
 
-#footer-author-3{
+#footer-author-2{
 	padding-right: 0px;
 }
 
@@ -1192,22 +1219,4 @@ div.square-container > div {
 	transform: translateY(100%) translateX(0%);
 	clip-path: inset(0); 
 	animation: footer-author-moves-2 10s ease-in-out infinite;
-}
-
-@keyframes footer-author-moves-3 {
-	0% {
-	transform: translateY(100%) translateX(0%); /* Starting point */
-	}
-	50% {
-	transform: translateY(-100%) translateX(0%); /* Moving to this location */
-	}
-	100% {
-	transform: translateY(100%) translateX(0%); /* Ending point */
-	}
-}
-
-#footer-author-3 {
-	transform: translateY(100%) translateX(0%);
-	clip-path: inset(0); 
-	animation: footer-author-moves-3 7s ease-in-out infinite;
 }
