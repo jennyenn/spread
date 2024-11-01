@@ -703,6 +703,10 @@ div.square-container > div {
 
 @media print{
 
+	/* @page{
+	margin-top: .5in;
+	} */
+
 	.sticky{
 		position: static;
 	}
@@ -710,7 +714,7 @@ div.square-container > div {
 	.sticky-1{
 		position: static;
 		padding: 0px;
-		margin: 0px;
+		margin: 32px 0px;
 		border: 1px solid #DA3946;
 		color: #DA3946;
 		font-size: var(--h2-size);
