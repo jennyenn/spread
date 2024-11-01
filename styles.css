@@ -258,11 +258,6 @@ nav {
 	z-index: 1;
 }
 
-/* .titleandarrow {
-	height: 85vh;
-	width: 100vw;
-} */
-
 @keyframes number-moves {
 0% {
 	transform: translateY(0%) translateX(-7%); /* Starting point */
@@ -498,7 +493,6 @@ div.square-container > div {
 		display: flex;
 		justify-content: center;
 		align-items: end;
-		padding: 0px var(--spacing-6);
 	}
 
 	h2 {
@@ -592,8 +586,81 @@ div.square-container > div {
 
 @media (min-width: 1280px) {
     h1 {
-        font-size: calc(var(--h1-size) * 2);
+        font-size: calc(var(--h1-size) * 2.5);
     }
+}
+
+
+/*\ media query 1920px */
+/*\ media query 1920px */
+/*\ media query 1920px */
+
+@media (min-width: 1920px) {
+
+	.nav-left {
+		font-size: 36px;
+	}
+	.hamburger{
+		font-size: 40px;}
+
+	h1 {
+        font-size: calc(var(--h1-size) * 3.5);
+    }
+
+	h2{
+		font-size: calc(var(--h2-size)*2);
+	}
+
+	.number-animation {
+		font-size: 6rem;
+	}
+
+	body{
+		max-width: 1920px;
+		margin: auto;
+	}
+
+	p{
+		font-size: calc(var(--paragraph-size)* 1.5);
+		line-height: calc(var(--paragraph-line-height)*1.5);
+	}
+
+	.left-section{
+		font-size: calc(var(--paragraph-size)* 1.5);
+	}
+
+	.multiple-choices button {
+		font-size: calc(var(--paragraph-size)* 1.5);
+	}
+
+	blockquote {
+		font-size: calc(var(--blockquote-size)*1.5);
+		line-height: calc(var(--blockquote-spacing)*1.5);
+	}
+	q {
+		font-size: calc(var(--blockquote-size)*1.5);
+		line-height: calc(var(--blockquote-spacing)*1.5);
+	}
+	.questions_list{
+		font-size: calc(var(--blockquote-size)*1.5);
+		line-height: calc(var(--blockquote-spacing)*1.5);
+	}
+	summary{
+		font-size: calc(var(--blockquote-size)*1.5);
+		line-height: calc(var(--blockquote-spacing)*1.5);
+	}
+	aside{
+		font-size: calc(var(--paragraph-size) * 1.4);
+		line-height: calc(var(--paragraph-spacing)*1.4);
+	}
+	#authordate{
+		font-size: calc(var(--paragraph-size) * 1.4);
+		padding-left: var(--spacing-1);
+	}
+
+	#footer-author-1, #footer-author-2, #footer-author-3{
+		font-size: calc(var(--h1-size) * 1.4);
+	}
 }
 
 
@@ -936,6 +1003,13 @@ div.square-container > div {
 	animation-delay: 15s;
 }
 
+.goodbye{
+	font-family: var(--h3-family);
+	font-size: calc(var(--h2-size) * 2);
+	color:#DA3946;
+	padding-top: var(--spacing-2);
+}
+
 /* Footer */
 
 .left-footer{
@@ -972,10 +1046,15 @@ div.square-container > div {
 
 #footer-author-1, #footer-author-2, #footer-author-3{
 	font-family: var(--h3-family);
-	font-size: calc(var(--h1-size) / 2.2);
+	font-size: var(--h1-size);
 	font-style: var(--h1-style);
 	margin: 0px;
-	padding-right: 16px;
+	padding-right: var(--spacing-2);
+	text-align: center;
+}
+
+#footer-author-3{
+	padding-right: 0px;
 }
 
 /* Footer animation */
