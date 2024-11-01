@@ -246,8 +246,7 @@ nav {
 	margin-left: var(--spacing-3);
 	margin-top: 80px;
 }
-	/* number */
-	/* number */
+
 	/* number */
 
 .number-container {
@@ -375,10 +374,9 @@ details[open] summary::after {
 	color: white;
 }
 
-/* sticky */
-/* sticky */
-/* sticky */
-/* try to fix the title sticky problems */
+	/* sticky */
+	/* sticky */
+	/* sticky */
 
 .sticky{
 	position: sticky;
@@ -455,7 +453,7 @@ div.square-container > div {
 	justify-content: left;
 }
 
-/* arrow */
+	/* arrow */
 .arrow-container{
 	display:flex;
 	justify-content: left;
@@ -491,6 +489,7 @@ div.square-container > div {
 	h1 {
         font-size: calc(var(--h1-size) * 1.5);
 	}
+
 	h2{
 		font-size: calc(var(--h2-size)*1.5);
 	}
@@ -511,6 +510,7 @@ div.square-container > div {
 		border-right: 1px solid #DA3946;
 		padding: var(--spacing-2) var(--spacing-4);
 	}
+
 	h3{
 		margin-left: var(--spacing-4);
 		margin-right: var(--spacing-4);
@@ -540,6 +540,10 @@ div.square-container > div {
 		margin: var(--spacing-1) var(--spacing-5) var(--spacing-4) 0px;
 	}
 
+	hr{
+		margin: var(--spacing-2)var(--spacing-5) ;
+	}
+
 	.two-column {
 		display: grid; 
 		grid-template-columns: repeat(2, 1fr);
@@ -549,6 +553,7 @@ div.square-container > div {
 
 	p{
 		grid-column: 2;}
+
 	ul{
 		grid-column: 2;}
 
@@ -597,30 +602,6 @@ div.square-container > div {
 		padding: 48px;
 	}
 }
-
-/*\ other media query */
-
-@media (min-width: 470px) {
-	.sticky-1{
-		top: 112px;}
-	}
-
-@media (min-width: 750px) {
-	.sticky-1{
-		top: 160px;}
-}
-
-@media (min-width: 850px) {
-	.sticky-1{
-		top: 126px;}
-}
-
-@media (min-width: 1280px) {
-    h1 {
-        font-size: calc(var(--h1-size) * 2.5);
-    }
-}
-
 
 /*\ media query 1920px */
 /*\ media query 1920px */
@@ -706,6 +687,33 @@ div.square-container > div {
 		font-size: calc(var(--h1-size) * 1.4);
 	}
 }
+
+
+/*\ other media query */
+/*\ other media query */
+/*\ other media query */
+
+@media (min-width: 470px) {
+	.sticky-1{
+		top: 112px;}
+	}
+
+@media (min-width: 750px) {
+	.sticky-1{
+		top: 160px;}
+}
+
+@media (min-width: 850px) {
+	.sticky-1{
+		top: 126px;}
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: calc(var(--h1-size) * 2.5);
+    }
+}
+
 
 
 /* Print Media Query (for 816 px) */
@@ -836,7 +844,6 @@ div.square-container > div {
 	.questions_list{
 		color: #02010F;
 		border-color: #02010F;
-		/* margin-bottom: var(--spacing-3); */
 		font-size: calc(var(--blockquote-size)*.7);
 		padding: var(--spacing-1);
 	}
@@ -849,7 +856,6 @@ div.square-container > div {
 		color: #02010F;
 		border-color: #02010F;
 		font-size: calc(var(--paragraph-size)*.75);
-		
 	}
 
 	#footer-author-1, #footer-author-2{
@@ -864,8 +870,6 @@ div.square-container > div {
 
 	#footer-author-1{
 		padding-bottom: 112px;
-		/* flex: auto;
-		position: relative; */
 	}
 
 	#footer-author-2{
