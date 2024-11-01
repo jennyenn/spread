@@ -120,10 +120,11 @@ a {
 	font-style: var(--links-style);
 	line-height: var(--links-spacing);
 	text-decoration: var(--links-text-decoration);
+	color: #DA3946;
 }
 
 a:hover {
-	color: #DA3946;
+	color: black;
 }
 
 blockquote {
