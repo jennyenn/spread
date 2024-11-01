@@ -307,6 +307,7 @@ summary{
 summary::after {
     content: " +";
 }
+
 details[open] summary::after {
     content: " -";
 }
@@ -625,6 +626,11 @@ div.square-container > div {
 		line-height: calc(var(--paragraph-line-height)*1.5);
 	}
 
+	a {
+		font-size: calc(var(--links-size)*1.5);
+		line-height: calc(var(--links-spacing)*1.5);
+	}
+
 	.left-section{
 		font-size: calc(var(--paragraph-size)* 1.5);
 	}
@@ -637,22 +643,27 @@ div.square-container > div {
 		font-size: calc(var(--blockquote-size)*1.5);
 		line-height: calc(var(--blockquote-spacing)*1.5);
 	}
+
 	q {
 		font-size: calc(var(--blockquote-size)*1.5);
 		line-height: calc(var(--blockquote-spacing)*1.5);
 	}
+
 	.questions_list{
 		font-size: calc(var(--blockquote-size)*1.5);
 		line-height: calc(var(--blockquote-spacing)*1.5);
 	}
+
 	summary{
 		font-size: calc(var(--blockquote-size)*1.5);
 		line-height: calc(var(--blockquote-spacing)*1.5);
 	}
+
 	aside{
 		font-size: calc(var(--paragraph-size) * 1.4);
-		line-height: calc(var(--paragraph-spacing)*1.4);
+		line-height: calc(var(--paragraph-line-height) * 1.4);
 	}
+	
 	#authordate{
 		font-size: calc(var(--paragraph-size) * 1.4);
 		padding-left: var(--spacing-1);
