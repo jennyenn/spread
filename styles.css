@@ -379,7 +379,7 @@ details[open] summary::after {
 .sticky-1{
 	position: sticky;
 	top: 140px;
-	z-index: 15;
+	z-index: 2;
 }
 
 	/* title */
@@ -573,7 +573,7 @@ div.square-container > div {
 
 	.sticky-1{
 		position: sticky;
-		top: 112px;
+		top: 160px;
 	}
 	footer{
 		display: grid; 
@@ -583,6 +583,23 @@ div.square-container > div {
 	.right-footer{
 		padding: 48px;
 	}
+}
+
+/*\ other media query */
+
+@media (min-width: 470px) {
+	.sticky-1{
+		top: 112px;}
+	}
+
+@media (min-width: 750px) {
+	.sticky-1{
+		top: 160px;}
+}
+
+@media (min-width: 850px) {
+	.sticky-1{
+		top: 126px;}
 }
 
 @media (min-width: 1280px) {
@@ -610,6 +627,9 @@ div.square-container > div {
 
 	h2{
 		font-size: calc(var(--h2-size)*2);
+	}
+	h3{
+		font-size: calc(var(--h3-size)*1.7);
 	}
 
 	.number-animation {
