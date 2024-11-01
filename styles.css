@@ -702,9 +702,20 @@ div.square-container > div {
 /* Print Media Query (for 816 px) */
 
 @media print{
-	.sticky-title1{
+
+	.sticky{
 		position: static;
 	}
+
+	.sticky-1{
+		position: static;
+		padding: 0px;
+		margin: 0px;
+		border: 1px solid #DA3946;
+		color: #DA3946;
+		font-size: var(--h2-size);
+	}
+
 	.number-h2{
 		display: flex;
 		justify-content: center;
@@ -712,9 +723,28 @@ div.square-container > div {
 	}
 
 	body {
-    padding: 10px; 
-	padding-top: 10px;
+    	padding: 10px; 
+		padding-top: 10px;
+		margin-top: 20px;
   	}
+
+	footer{
+		page-break-after: always;
+	}
+
+	.left-footer{
+		display: none;
+	}
+
+	section {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	h3{
+		color: #DA3946;
+		font-size: var(--h2-size);
+	}
 
 	.number-animation{	
 		display: flex;
