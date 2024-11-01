@@ -705,6 +705,33 @@ div.square-container > div {
 	.sticky-title1{
 		position: static;
 	}
+	.number-h2{
+		display: flex;
+		justify-content: center;
+		border-right: 1px solid #DA3946;
+	}
+
+	body {
+    padding: 10px; 
+	padding-top: 10px;
+  	}
+
+	.number-animation{	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: none !important;
+		animation: none !important;
+		transition: none !important;
+		padding: 0px;
+		padding-top: 12px;
+		margin: 0px;
+		font-size: 48px;
+	}
+	
+	header{
+	position: static;
+	}	
 }
 	
 
