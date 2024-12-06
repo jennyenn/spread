@@ -1,4 +1,4 @@
-Project 2: Spread
+<strong> Project 2: Spread </strong>
 
 
 Hello! We are Jenny & Hannah!!
